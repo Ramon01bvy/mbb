@@ -1,0 +1,1365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Well To Do Front Scorpion</title>
+    <meta property="og:title" content="Well To Do Front Scorpion" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;  -webkit-font-smoothing: antialiased;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;  color: inherit;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}pre {  white-space: normal;}input {  padding: 2px 4px;}img {  display: block;}details {  display: block;  margin: 0;  padding: 0;}summary::-webkit-details-marker {  display: none;}[data-thq="accordion"] [data-thq="accordion-content"] {  max-height: 0;  overflow: hidden;  transition: max-height 0.3s ease-in-out;  padding: 0;}[data-thq="accordion"] details[data-thq="accordion-trigger"][open] + [data-thq="accordion-content"] {  max-height: 1000vh;}details[data-thq="accordion-trigger"][open] summary [data-thq="accordion-icon"] {  transform: rotate(180deg);}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 1rem;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: undefined;
+        text-transform: undefined;
+        letter-spacing: normal;
+        line-height: 1.55;
+        color: var(--color-on-surface);
+        background: var(--color-surface);
+
+        fill: var(--color-on-surface);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+
+      <div class="home-container10">
+        <navigation-wrapper
+          class="navigation-wrapper"
+          rootclassname="navigationundefined"
+        >
+          <!--Navigation component-->
+          <div class="navigation-container1 navigationroot-class-name">
+            <div class="navigation-container2">
+              <div class="navigation-container3">
+                <style>
+                          @keyframes slideInLeft {to {transform: translateX(0);
+                  opacity: 1;}}@keyframes slideInUp {to {transform: translateY(0);
+                  opacity: 1;}}
+                </style>
+              </div>
+            </div>
+            <div class="navigation-container4">
+              <div class="navigation-container5">
+                <script defer="" data-name="navigation">
+                  (function(){
+                    const navigationToggle = document.getElementById('navigationToggle')
+                    const navigationMobileOverlay = document.getElementById(
+                      'navigationMobileOverlay'
+                    )
+                    const navigationMobileClose = document.getElementById('navigationMobileClose')
+
+                    function openMobileNavigation() {
+                      navigationMobileOverlay.classList.add('navigation-mobile-active')
+                      navigationToggle.setAttribute('aria-expanded', 'true')
+                      navigationToggle.setAttribute('aria-label', 'Menu sluiten')
+                      document.body.style.overflow = 'hidden'
+                    }
+
+                    function closeMobileNavigation() {
+                      navigationMobileOverlay.classList.remove('navigation-mobile-active')
+                      navigationToggle.setAttribute('aria-expanded', 'false')
+                      navigationToggle.setAttribute('aria-label', 'Menu openen')
+                      document.body.style.overflow = ''
+                    }
+
+                    navigationToggle.addEventListener('click', function () {
+                      if (
+                        navigationMobileOverlay.classList.contains('navigation-mobile-active')
+                      ) {
+                        closeMobileNavigation()
+                      } else {
+                        openMobileNavigation()
+                      }
+                    })
+
+                    navigationMobileClose.addEventListener('click', closeMobileNavigation)
+
+                    // Close mobile navigation when clicking on overlay
+                    navigationMobileOverlay.addEventListener('click', function (e) {
+                      if (e.target === navigationMobileOverlay) {
+                        closeMobileNavigation()
+                      }
+                    })
+
+                    // Close mobile navigation on escape key
+                    document.addEventListener('keydown', function (e) {
+                      if (
+                        e.key === 'Escape' &&
+                        navigationMobileOverlay.classList.contains('navigation-mobile-active')
+                      ) {
+                        closeMobileNavigation()
+                      }
+                    })
+
+                    // Handle mobile navigation links
+                    const mobileNavLinks = document.querySelectorAll(
+                      '.navigation-mobile-menu-link, .navigation-mobile-cta'
+                    )
+                    mobileNavLinks.forEach((link) => {
+                      link.addEventListener('click', function () {
+                        closeMobileNavigation()
+                      })
+                    })
+
+                    // Handle window resize
+                    window.addEventListener('resize', function () {
+                      if (
+                        window.innerWidth > 991 &&
+                        navigationMobileOverlay.classList.contains('navigation-mobile-active')
+                      ) {
+                        closeMobileNavigation()
+                      }
+                    })
+                  })()
+                </script>
+              </div>
+            </div>
+            <nav id="navigation" class="navigation">
+              <div class="navigation-container">
+                <div class="navigation-brand">
+                  <a href="index.html">
+                    <div
+                      aria-label="Marcodonato Luxe Homepage"
+                      class="navigation-logo"
+                    >
+                      <span
+                        class="navigation-navigation-logo-text1 navigation-logo-text"
+                      >
+                        Marcodonato Digital Luxe B.V.
+                      </span>
+                    </div>
+                  </a>
+                </div>
+                <div class="navigation-content">
+                  <ul id="navigationMenu" class="navigation-menu">
+                    <li class="navigation-menu-item">
+                      <a href="live-dashboard.html">
+                        <div class="navigation-menu-link">
+                          <span>Live Dashboard</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="navigation-menu-item">
+                      <a href="intake-aanvragen.html">
+                        <div class="navigation-menu-link">
+                          <span>Intake Aanvragen</span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="navigation-actions">
+                    <a href="intake-aanvragen.html">
+                      <div class="navigation-cta btn btn-primary">
+                        <span>Claim Exclusieve Intake</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <button
+                  id="navigationToggle"
+                  aria-label="Menu openen"
+                  aria-expanded="false"
+                  class="navigation-toggle"
+                >
+                  <div
+                    id="navigationToggleIcon"
+                    class="navigation-navigation-toggle-icon"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M4 5h16M4 12h16M4 19h16"
+                      ></path>
+                    </svg>
+                  </div>
+                </button>
+              </div>
+              <div
+                id="navigationMobileOverlay"
+                class="navigation-mobile-overlay"
+              >
+                <div class="navigation-mobile-content">
+                  <div class="navigation-mobile-header">
+                    <div class="navigation-brand">
+                      <a href="index.html">
+                        <div
+                          aria-label="Marcodonato Luxe Homepage"
+                          class="navigation-logo"
+                        >
+                          <span class="navigation-logo-text">Marcodonato</span>
+                          <span class="navigation-logo-accent">Luxe</span>
+                        </div>
+                      </a>
+                    </div>
+                    <button
+                      id="navigationMobileClose"
+                      aria-label="Menu sluiten"
+                      class="navigation-mobile-close"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M18 6L6 18M6 6l12 12"
+                        ></path>
+                      </svg>
+                    </button>
+                  </div>
+                  <ul class="navigation-mobile-menu">
+                    <li class="navigation-mobile-menu-item">
+                      <a href="live-dashboard.html">
+                        <div class="navigation-mobile-menu-link">
+                          <span>Live Dashboard</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="navigation-mobile-menu-item">
+                      <a href="intake-aanvragen.html">
+                        <div class="navigation-mobile-menu-link">
+                          <span>Intake Aanvragen</span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="navigation-mobile-actions">
+                    <a href="intake-aanvragen.html">
+                      <div class="navigation-mobile-cta btn btn-primary">
+                        <span>Claim Exclusieve Intake</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </navigation-wrapper>
+        <div class="home-container11">
+          <div class="home-container12">
+            <style>
+                      @keyframes floatAnimation {0%,100% {transform: translateY(0px);}
+              50% {transform: translateY(-20px);}}
+            </style>
+          </div>
+        </div>
+        <div class="home-container13">
+          <div class="home-container14">
+            <script defer="" data-name="homepage-interactions">
+              (function(){
+                // Smooth scrolling animations and interactions
+                const observerOptions = {
+                  threshold: 0.1,
+                  rootMargin: '0px 0px -50px 0px',
+                }
+
+                // Fade in animation for sections
+                const fadeElements = document.querySelectorAll(
+                  '.value-card, .luxury-card, .result-card'
+                )
+
+                const fadeObserver = new IntersectionObserver((entries) => {
+                  entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                      entry.target.style.opacity = '1'
+                      entry.target.style.transform = 'translateY(0)'
+                    }
+                  })
+                }, observerOptions)
+
+                // Initialize fade animations
+                fadeElements.forEach((element, index) => {
+                  element.style.opacity = '0'
+                  element.style.transform = 'translateY(30px)'
+                  element.style.transition = `opacity 0.6s ease ${
+                    index * 0.1
+                  }s, transform 0.6s ease ${index * 0.1}s`
+                  fadeObserver.observe(element)
+                })
+
+                // Parallax effect for hero background
+                const heroSection = document.getElementById('hero')
+                const heroVideo = document.querySelector('.hero-video')
+
+                if (heroVideo) {
+                  window.addEventListener('scroll', () => {
+                    const scrolled = window.pageYOffset
+                    const parallaxSpeed = scrolled * 0.5
+
+                    if (scrolled < heroSection.offsetHeight) {
+                      heroVideo.style.transform = `translate3d(0, ${parallaxSpeed}px, 0)`
+                    }
+                  })
+                }
+
+                // Floating cards animation enhancement
+                const floatingCards = document.querySelectorAll('.floating-card')
+                let mouseX = 0
+                let mouseY = 0
+
+                document.addEventListener('mousemove', (e) => {
+                  mouseX = e.clientX / window.innerWidth
+                  mouseY = e.clientY / window.innerHeight
+                })
+
+                function updateFloatingCards() {
+                  floatingCards.forEach((card, index) => {
+                    const speed = (index + 1) * 0.5
+                    const x = (mouseX - 0.5) * speed * 20
+                    const y = (mouseY - 0.5) * speed * 20
+
+                    card.style.transform = `translate(${x}px, ${y}px)`
+                  })
+
+                  requestAnimationFrame(updateFloatingCards)
+                }
+
+                if (floatingCards.length > 0) {
+                  updateFloatingCards()
+                }
+
+                // Enhanced hover effects for cards
+                const interactiveCards = document.querySelectorAll(
+                  '.value-card, .luxury-card'
+                )
+
+                interactiveCards.forEach((card) => {
+                  card.addEventListener('mouseenter', (e) => {
+                    const rect = e.currentTarget.getBoundingClientRect()
+                    const x = e.clientX - rect.left
+                    const y = e.clientY - rect.top
+
+                    e.currentTarget.style.setProperty('--mouse-x', `${x}px`)
+                    e.currentTarget.style.setProperty('--mouse-y', `${y}px`)
+                  })
+
+                  card.addEventListener('mouseleave', (e) => {
+                    e.currentTarget.style.transform = 'translateY(0) rotateX(0) rotateY(0)'
+                  })
+
+                  card.addEventListener('mousemove', (e) => {
+                    const rect = e.currentTarget.getBoundingClientRect()
+                    const x = e.clientX - rect.left
+                    const y = e.clientY - rect.top
+                    const centerX = rect.width / 2
+                    const centerY = rect.height / 2
+                    const rotateX = (y - centerY) / 10
+                    const rotateY = (centerX - x) / 10
+
+                    e.currentTarget.style.transform = `translateY(-8px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`
+                  })
+                })
+
+                // CTA button enhancement
+                const ctaButtons = document.querySelectorAll('.btn-primary, .btn-xl')
+
+                ctaButtons.forEach((button) => {
+                  button.addEventListener('click', (e) => {
+                    // Create ripple effect
+                    const ripple = document.createElement('span')
+                    const rect = button.getBoundingClientRect()
+                    const size = Math.max(rect.width, rect.height)
+                    const x = e.clientX - rect.left - size / 2
+                    const y = e.clientY - rect.top - size / 2
+
+                    ripple.style.cssText = `
+                    position: absolute;
+                    width: ${size}px;
+                    height: ${size}px;
+                    left: ${x}px;
+                    top: ${y}px;
+                    background: rgba(255, 255, 255, 0.3);
+                    border-radius: 50%;
+                    transform: scale(0);
+                    animation: ripple-animation 0.6s ease-out;
+                    pointer-events: none;
+                  `
+
+                    button.style.position = 'relative'
+                    button.style.overflow = 'hidden'
+                    button.appendChild(ripple)
+
+                    setTimeout(() => {
+                      ripple.remove()
+                    }, 600)
+                  })
+                })
+
+                // Add CSS for ripple animation
+                const style = document.createElement('style')
+                style.textContent = `
+                @keyframes ripple-animation {
+                  to {
+                    transform: scale(2);
+                    opacity: 0;
+                  }
+                }
+              `
+                document.head.appendChild(style)
+
+                // Stats counter animation
+                const statNumbers = document.querySelectorAll('.stat-number')
+
+                const countUpObserver = new IntersectionObserver(
+                  (entries) => {
+                    entries.forEach((entry) => {
+                      if (entry.isIntersecting) {
+                        const target = entry.target
+                        const text = target.textContent
+                        const hasPercent = text.includes('%')
+                        const hasColon = text.includes(':')
+
+                        let endValue
+                        if (hasPercent) {
+                          endValue = parseInt(text)
+                        } else if (hasColon) {
+                          endValue = 3
+                        } else {
+                          endValue = parseInt(text)
+                        }
+
+                        let startValue = 0
+                        const increment = endValue / 50
+                        const timer = setInterval(() => {
+                          startValue += increment
+                          if (startValue >= endValue) {
+                            startValue = endValue
+                            clearInterval(timer)
+                          }
+
+                          if (hasPercent) {
+                            target.textContent = Math.floor(startValue) + '%'
+                          } else if (hasColon) {
+                            target.textContent = Math.floor(startValue) + ':1'
+                          } else {
+                            target.textContent = Math.floor(startValue)
+                          }
+                        }, 40)
+
+                        countUpObserver.unobserve(target)
+                      }
+                    })
+                  },
+                  { threshold: 0.5 }
+                )
+
+                statNumbers.forEach((stat) => {
+                  countUpObserver.observe(stat)
+                })
+              })()
+            </script>
+          </div>
+        </div>
+        <main class="homepage">
+          <section id="hero" class="hero">
+            <div class="hero-background">
+              <video
+                autoplay="true"
+                muted="true"
+                loop="true"
+                src="https://videos.pexels.com/video-files/3196002/3196002-hd_1920_1080_25fps.mp4"
+                class="hero-video"
+              ></video>
+              <div class="hero-overlay"></div>
+            </div>
+            <div class="hero-content">
+              <div class="hero-badge">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.734H5.81a1 1 0 0 1-.957-.734L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294zM5 21h14"
+                  ></path>
+                </svg>
+                <span>Exclusief voor Luxe Merken</span>
+              </div>
+              <h1 class="hero-title">Digitale Overheersing voor Luxe Merken</h1>
+              <p class="hero-subtitle">
+                AI-gedreven marketing met een gegarandeerde 3:1 ROAS binnen 120
+                dagen. Exclusief voor maximaal 10 merken per jaar.
+              </p>
+              <div class="hero-stats">
+                <div class="stat-item">
+                  <span class="stat-number">220%</span>
+                  <span class="stat-label">Omzetgroei</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number">3:1</span>
+                  <span class="stat-label">Gegarandeerde ROAS</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number">120</span>
+                  <span class="stat-label">Dagen Garantie</span>
+                </div>
+              </div>
+              <div class="hero-actions">
+                <button class="btn btn-primary btn-lg">
+                  Claim Exclusieve Intake
+                </button>
+                <button class="btn btn-lg btn-outline">
+                  Bekijk Resultaten
+                </button>
+              </div>
+            </div>
+            <div class="hero-floating-elements">
+              <div class="floating-card floating-card-1">
+                <div class="card-content">
+                  <span class="metric">€32.500</span>
+                  <span class="label">Programma Waarde</span>
+                </div>
+              </div>
+              <div class="floating-card floating-card-2">
+                <div class="card-content">
+                  <span class="metric">€9.997</span>
+                  <span class="label">Maandelijks</span>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="value-proposition" class="value-proposition">
+            <div class="container">
+              <div class="section-header">
+                <h2 class="section-title">
+                  Het 120-Dagen 'Digitale Overheersing' Protocool
+                </h2>
+                <p class="section-subtitle">
+                  Onze unieke aanpak garandeert meetbare resultaten of wij
+                  werken gratis door
+                </p>
+              </div>
+              <div class="value-grid">
+                <div class="value-card featured-card">
+                  <div class="card-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <h3>Winstgevendheid of Geld Terug Garantie</h3>
+                  <p>
+                    Minimaal 3:1 ROAS of 30% Traffic Value stijging binnen 120
+                    dagen, anders werken wij gratis door.
+                  </p>
+                  <div class="guarantee-badge">
+                    <span>100% Risicovrij</span>
+                  </div>
+                </div>
+                <div class="value-card">
+                  <div class="card-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <g
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                      >
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <circle cx="12" cy="12" r="6"></circle>
+                        <circle cx="12" cy="12" r="2"></circle>
+                      </g>
+                    </svg>
+                  </div>
+                  <h3>AI-Gedreven Targeting</h3>
+                  <p>
+                    Geavanceerde AI-tools voor precision targeting van luxe
+                    doelgroepen met bewezen conversiestrategieën.
+                  </p>
+                </div>
+                <div class="value-card">
+                  <div class="card-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <g
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                      >
+                        <path d="M16 7h6v6"></path>
+                        <path d="m22 7l-8.5 8.5l-5-5L2 17"></path>
+                      </g>
+                    </svg>
+                  </div>
+                  <h3>Premium Conversiefunnel</h3>
+                  <p>
+                    Ontwikkeling van een premium conversiefunnel die is
+                    afgestemd op de psychologie van luxe kopers.
+                  </p>
+                </div>
+                <div class="value-card">
+                  <div class="card-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.12 2.12 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.12 2.12 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.12 2.12 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.12 2.12 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.12 2.12 0 0 0 1.597-1.16z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <h3>White-Glove Service</h3>
+                  <p>
+                    Persoonlijke account director en exclusieve onboarding voor
+                    een volledig op maat gemaakte ervaring.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="services" class="exclusive-services">
+            <div class="services-background">
+              <img
+                src="https://images.pexels.com/photos/13307276/pexels-photo-13307276.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940"
+                alt="Luxurious lobby with contemporary furniture and stunning mountain views"
+                class="services-bg-image"
+              />
+              <div class="services-overlay"></div>
+            </div>
+            <div class="container">
+              <div class="services-content">
+                <div class="services-text">
+                  <span class="services-badge">
+                    Maximaal 10 Merken Per Jaar
+                  </span>
+                  <h2 class="section-title">
+                    Exclusieve Diensten voor Serieuze Luxemerken
+                  </h2>
+                  <p class="section-content">
+                    Onze selecte aanpak waarborgt de hoogste kwaliteit service
+                    en persoonlijke aandacht voor elk merk dat wij
+                    vertegenwoordigen.
+                  </p>
+                  <div class="services-checklist">
+                    <div class="check-item">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M20 6L9 17l-5-5"
+                        ></path>
+                      </svg>
+                      <span>Uitgebreide AI-audit en SEO strategie</span>
+                    </div>
+                    <div class="check-item">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M20 6L9 17l-5-5"
+                        ></path>
+                      </svg>
+                      <span>No-risk advertenties optimalisatie</span>
+                    </div>
+                    <div class="check-item">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M20 6L9 17l-5-5"
+                        ></path>
+                      </svg>
+                      <span>Exclusieve marktinzichten en rapportages</span>
+                    </div>
+                    <div class="check-item">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M20 6L9 17l-5-5"
+                        ></path>
+                      </svg>
+                      <span>Live dashboard en wekelijkse KPI-rapportages</span>
+                    </div>
+                  </div>
+                  <button class="btn btn-primary btn-xl">
+                    Ontdek Onze Aanpak
+                  </button>
+                </div>
+                <div class="services-visual">
+                  <div class="visual-card premium-card">
+                    <div class="card-header"><h4>Programma Overzicht</h4></div>
+                    <div class="price-display">
+                      <span class="original-price">€32.500</span>
+                      <span class="current-price">
+                        <span>€9.997</span>
+                        <span class="home-period">/maand</span>
+                      </span>
+                    </div>
+                    <div class="program-features">
+                      <div class="feature-item">
+                        <span class="feature-label">Contract Duur</span>
+                        <span class="feature-value">4 Maanden Initieel</span>
+                      </div>
+                      <div class="feature-item">
+                        <span class="feature-label">Garantie Periode</span>
+                        <span class="feature-value">120 Dagen</span>
+                      </div>
+                      <div class="feature-item">
+                        <span class="feature-label">Minimale ROAS</span>
+                        <span class="feature-value">3:1 Gegarandeerd</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="results" class="results-showcase">
+            <div class="container">
+              <div class="section-header centered">
+                <h2 class="section-title">
+                  Bewezen Resultaten voor Luxe Merken
+                </h2>
+                <p class="section-subtitle">
+                  Onze klanten ervaren transformationele groei door onze
+                  expertise
+                </p>
+              </div>
+              <div class="results-grid">
+                <div class="result-card luxury-card">
+                  <div class="result-image">
+                    <img
+                      src="https://images.pexels.com/photos/7927101/pexels-photo-7927101.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940"
+                      alt="Close-up of a black leather briefcase on a modern couch, emphasizing luxury and sophistication"
+                    />
+                  </div>
+                  <div class="result-content">
+                    <div class="result-category">
+                      <span>High-End Juwelier</span>
+                    </div>
+                    <div class="result-metric">
+                      <span>220% Omzetgroei</span>
+                    </div>
+                    <p class="result-description">
+                      Binnen 90 dagen realiseerde dit exclusieve juwelier merk
+                      een omzetgroei van meer dan 220% door onze gerichte
+                      AI-campagnes.
+                    </p>
+                  </div>
+                </div>
+                <div class="result-card luxury-card">
+                  <div class="result-image">
+                    <img
+                      src="https://images.pexels.com/photos/5778461/pexels-photo-5778461.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940"
+                      alt="Two businesspeople having a meeting on a private jet, enjoying a coffee break"
+                    />
+                  </div>
+                  <div class="result-content">
+                    <div class="result-category">
+                      <span>Wellness Retreat</span>
+                    </div>
+                    <div class="result-metric"><span>3:1 ROAS</span></div>
+                    <p class="result-description">
+                      Premium wellness retreat behaalde binnen 120 dagen een
+                      stabiele 3:1 ROAS met onze exclusieve targeting
+                      strategieën.
+                    </p>
+                  </div>
+                </div>
+                <div class="result-card luxury-card">
+                  <div class="result-image">
+                    <img
+                      src="https://images.pexels.com/photos/7598125/pexels-photo-7598125.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940"
+                      alt="Sleek office interior with a modern desk, plush chair, and stylish decor in neutral tones"
+                    />
+                  </div>
+                  <div class="result-content">
+                    <div class="result-category">
+                      <span>Luxe Interieur</span>
+                    </div>
+                    <div class="result-metric">
+                      <span>185% Traffic Stijging</span>
+                    </div>
+                    <p class="result-description">
+                      Exclusief interieurmerk zag een 185% stijging in
+                      kwalitatieve traffic en 45% meer conversies binnen 4
+                      maanden.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="cta" class="cta-section">
+            <div class="cta-background">
+              <video
+                autoplay="true"
+                muted="true"
+                loop="true"
+                src="https://videos.pexels.com/video-files/7426708/7426708-hd_720_1280_25fps.mp4"
+                class="cta-video"
+              ></video>
+              <div class="cta-overlay"></div>
+            </div>
+            <div class="container">
+              <div class="cta-content">
+                <div class="cta-badge">
+                  <span>Beperkte Beschikbaarheid</span>
+                </div>
+                <h2 class="section-title">Klaar voor Digitale Overheersing?</h2>
+                <p class="section-subtitle">
+                  Claim uw exclusieve intake en ontdek hoe wij samen uw luxe
+                  merk naar nieuwe hoogten brengen met onze gegarandeerde
+                  resultaten.
+                </p>
+                <div class="cta-features">
+                  <div class="cta-feature">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"
+                      ></path>
+                    </svg>
+                    <span>100% Risicovrije Garantie</span>
+                  </div>
+                  <div class="cta-feature">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.734H5.81a1 1 0 0 1-.957-.734L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294zM5 21h14"
+                      ></path>
+                    </svg>
+                    <span>Exclusieve White-Glove Service</span>
+                  </div>
+                  <div class="cta-feature">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <g
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                      >
+                        <path d="M16 7h6v6"></path>
+                        <path d="m22 7l-8.5 8.5l-5-5L2 17"></path>
+                      </g>
+                    </svg>
+                    <span>Gegarandeerde 3:1 ROAS</span>
+                  </div>
+                </div>
+                <div class="cta-actions">
+                  <button class="btn btn-primary btn-xl">
+                    Claim Exclusieve Intake Nu
+                  </button>
+                  <div class="cta-note">
+                    <span>
+                      Maximaal 10 merken per jaar • Eerste intake volledig
+                      gratis
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+        <footer-wrapper class="footer-wrapper">
+          <!--Footer component-->
+          <div class="footer-container">
+            <footer class="footer">
+              <div class="footer-container">
+                <div class="footer-divider">
+                  <svg viewBox="0 0 1200 120" class="footer-curve">
+                    <path
+                      d="M0,0 C150,80 350,80 600,40 C850,0 1050,40 1200,20 L1200,120 L0,120 Z"
+                      fill="var(--color-surface-elevated)"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="footer-content">
+                  <div class="footer-brand-section">
+                    <div class="footer-brand">
+                      <h3 class="footer-brand-title">Marcodonato Luxe</h3>
+                      <p class="footer-brand-tagline">
+                        Exclusieve AI-gedreven digital marketing voor luxe
+                        merken
+                      </p>
+                    </div>
+                    <div class="footer-trust-badges">
+                      <div class="footer-badge">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"
+                          ></path>
+                        </svg>
+                        <span>3:1 ROAS Garantie</span>
+                      </div>
+                      <div class="footer-badge">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <g
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                          >
+                            <path
+                              d="m15.477 12.89l1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"
+                            ></path>
+                            <circle cx="12" cy="8" r="6"></circle>
+                          </g>
+                        </svg>
+                        <span>Exclusief voor 10 merken</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="footer-navigation">
+                    <div class="footer-nav-column">
+                      <h4 class="footer-nav-title">Programma</h4>
+                      <ul class="footer-nav-list">
+                        <li>
+                          <a href="#">
+                            <div class="footer-nav-link">
+                              <span>120-Dagen Protocol</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="footer-nav-link">
+                              <span>AI-Audit &amp; Strategie</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="footer-nav-link">
+                              <span>Premium Conversiefunnel</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="footer-nav-link">
+                              <span>No-Risk Optimalisatie</span>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="footer-nav-column">
+                      <h4 class="footer-nav-title">Resultaten</h4>
+                      <ul class="footer-nav-list">
+                        <li>
+                          <a href="live-dashboard.html">
+                            <div class="footer-nav-link">
+                              <span>Live Dashboard</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="footer-nav-link">
+                              <span>Klant Cases</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="footer-nav-link">
+                              <span>Meetbare Groei</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="footer-nav-link">
+                              <span>Marktinzichten</span>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="footer-nav-column">
+                      <h4 class="footer-nav-title">Over Ons</h4>
+                      <ul class="footer-nav-list">
+                        <li>
+                          <a href="index.html">
+                            <div class="footer-nav-link">
+                              <span>Homepage</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="footer-nav-link">
+                              <span>Onze Aanpak</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="footer-nav-link">
+                              <span>White-Glove Service</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="footer-nav-link">
+                              <span>Expertise Team</span>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="footer-contact-section">
+                    <div class="footer-cta">
+                      <h4 class="footer-cta-title">
+                        Klaar voor Digitale Overheersing?
+                      </h4>
+                      <p class="footer-cta-text">
+                        Claim uw exclusieve intake en ontdek hoe wij uw luxe
+                        merk naar nieuwe hoogten brengen.
+                      </p>
+                      <a href="intake-aanvragen.html">
+                        <div class="footer-cta-button btn btn-primary">
+                          <span>Exclusieve Intake Claimen</span>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="footer-contact">
+                      <h4 class="footer-contact-title">Direct Contact</h4>
+                      <div class="footer-contact-items">
+                        <a href="mailto:info@marcodonatoluxe.nl?subject=">
+                          <div class="footer-contact-item">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                            >
+                              <g
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                              >
+                                <path
+                                  d="m22 7l-8.991 5.727a2 2 0 0 1-2.009 0L2 7"
+                                ></path>
+                                <rect
+                                  width="20"
+                                  height="16"
+                                  x="2"
+                                  y="4"
+                                  rx="2"
+                                ></rect>
+                              </g>
+                            </svg>
+                            <span>info@marcodonatoluxe.nl</span>
+                          </div>
+                        </a>
+                        <a href="tel:+31207001234">
+                          <div class="footer-contact-item">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233a14 14 0 0 0 6.392 6.384"
+                              ></path>
+                            </svg>
+                            <span>+31 20 700 1234</span>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="footer-social">
+                        <a href="#">
+                          <div aria-label="LinkedIn" class="footer-social-link">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                            >
+                              <g
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                              >
+                                <path
+                                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2a2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6M2 9h4v12H2z"
+                                ></path>
+                                <circle cx="4" cy="4" r="2"></circle>
+                              </g>
+                            </svg>
+                          </div>
+                        </a>
+                        <a href="#">
+                          <div
+                            aria-label="Instagram"
+                            class="footer-social-link"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                            >
+                              <g
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                              >
+                                <rect
+                                  width="20"
+                                  height="20"
+                                  x="2"
+                                  y="2"
+                                  rx="5"
+                                  ry="5"
+                                ></rect>
+                                <path
+                                  d="M16 11.37A4 4 0 1 1 12.63 8A4 4 0 0 1 16 11.37m1.5-4.87h.01"
+                                ></path>
+                              </g>
+                            </svg>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer-legal">
+                  <div class="footer-legal-content">
+                    <p class="footer-copyright">
+                      © 2025 Marcodonato Digital Luxe B.V. Alle rechten
+                      voorbehouden.
+                    </p>
+                    <div class="footer-legal-links">
+                      <a href="#">
+                        <div class="footer-legal-link">
+                          <span>Privacybeleid</span>
+                        </div>
+                      </a>
+                      <a href="#">
+                        <div class="footer-legal-link">
+                          <span>Algemene Voorwaarden</span>
+                        </div>
+                      </a>
+                      <a href="#">
+                        <div class="footer-legal-link">
+                          <span>Cookie Beleid</span>
+                        </div>
+                      </a>
+                      <a href="#">
+                        <div class="footer-legal-link">
+                          <span>Garantie Voorwaarden</span>
+                        </div>
+                      </a>
+                    </div>
+                    <p class="footer-legal-text">
+                      KvK: 87654321 | BTW: NL123456789B01
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </footer>
+          </div>
+        </footer-wrapper>
+        <a href="https://play.teleporthq.io/signup">
+          <div aria-label="Sign up to TeleportHQ" class="home-container19">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 19 21"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="home-icon41"
+            >
+              <path
+                d="M9.1017 4.64355H2.17867C0.711684 4.64355 -0.477539 5.79975 -0.477539 7.22599V13.9567C-0.477539 15.3829 0.711684 16.5391 2.17867 16.5391H9.1017C10.5687 16.5391 11.7579 15.3829 11.7579 13.9567V7.22599C11.7579 5.79975 10.5687 4.64355 9.1017 4.64355Z"
+                fill="#B23ADE"
+              ></path>
+              <path
+                d="M10.9733 12.7878C14.4208 12.7878 17.2156 10.0706 17.2156 6.71886C17.2156 3.3671 14.4208 0.649963 10.9733 0.649963C7.52573 0.649963 4.73096 3.3671 4.73096 6.71886C4.73096 10.0706 7.52573 12.7878 10.9733 12.7878Z"
+                fill="#FF5C5C"
+              ></path>
+              <path
+                d="M17.7373 13.3654C19.1497 14.1588 19.1497 15.4634 17.7373 16.2493L10.0865 20.5387C8.67402 21.332 7.51855 20.6836 7.51855 19.0968V10.5141C7.51855 8.92916 8.67402 8.2807 10.0865 9.07221L17.7373 13.3654Z"
+                fill="#2874DE"
+              ></path>
+            </svg>
+            <span class="home-text37">Built in TeleportHQ</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

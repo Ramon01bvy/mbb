@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Het 120-Dagen 'Digitale Overheersing' Protocool �_" Marcodonato Digital Luxe</title>
+  <meta name="description" content="Exclusieve AI-gedreven marketing voor luxe merken. 120 dagen, gegarandeerde groei of wij werken gratis door.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --gold-light: #d4af37;
+      --gold-dark: #b8860b;
+    }
+    .gold-text {
+      background: linear-gradient(90deg, var(--gold-light), var(--gold-dark));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .lux-card {
+      background: linear-gradient(145deg, #111, #000);
+      border: 1px solid var(--gold-dark);
+      box-shadow: 0 6px 40px rgba(212,175,55,0.25);
+    }
+    .gold-btn {
+      background: linear-gradient(90deg, var(--gold-light), var(--gold-dark));
+      color: #000;
+      font-weight: 600;
+    }
+    .gold-border {
+      border-color: var(--gold-dark);
+    }
+  </style>
+</head>
+<body class="antialiased bg-black text-gray-100">
+  <header class="max-w-7xl mx-auto p-6 flex items-center justify-between border-b border-[var(--gold-dark)]">
+    <div class="flex items-center gap-4">
+      <div class="w-12 h-12 rounded-full flex items-center justify-center bg-black border border-[var(--gold-dark)] shadow-lg">
+        <svg width="34" height="34" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="11" stroke="var(--gold-light)" stroke-width="1.5"></circle>
+        <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="serif" font-size="9" fill="var(--gold-light)">
+          MD
+        </text></svg>
+      </div>
+      <div>
+        <p class="text-sm text-[var(--gold-light)] font-semibold">Marcodonato</p>
+        <p class="text-xs text-gray-400">Digital Luxe B.V.</p>
+      </div>
+    </div>
+    <nav class="hidden md:flex gap-6 items-center text-sm text-gray-300">
+      <a href="#aanbieding" class="hover:text-[var(--gold-light)]">Aanbieding</a> <a href="#waarden" class="hover:text-[var(--gold-light)]">Waarde</a> <a href="#garantie" class="hover:text-[var(--gold-light)]">Garantie</a> <a href="#contact" class="px-4 py-2 rounded border gold-border hover:bg-[var(--gold-dark)] hover:text-black transition">Contact</a>
+    </nav>
+  </header>
+  <main class="max-w-6xl mx-auto px-6">
+    <section class="grid md:grid-cols-2 gap-12 items-center py-16">
+      <div>
+        <h1 class="text-5xl md:text-6xl font-extrabold leading-tight gold-text">Het 120-Dagen 'Digitale Overheersing' Protocool</h1>
+        <p class="mt-6 text-lg text-gray-300">Exclusieve, AI-gedreven digital marketing voor luxe merken. Binnen <strong class="text-[var(--gold-light)]">120 dagen</strong> gegarandeerd minimaal <strong class="text-[var(--gold-light)]">3:1 ROAS</strong> of <strong class="text-[var(--gold-light)]">30% stijging in Traffic Value</strong> �_" ��f wij werken gratis door totdat dat doel bereikt is.</p>
+        <ul class="mt-8 space-y-4 text-gray-300">
+          <li><span class="text-[var(--gold-light)]">�o"</span> Exclusiviteit: maximaal <strong>10 merken</strong> per jaar.</li>
+          <li><span class="text-[var(--gold-light)]">�o"</span> White-glove onboarding & persoonlijke account director.</li>
+          <li><span class="text-[var(--gold-light)]">�o"</span> Toegang tot proprietary AI-tools en luxe-audiences.</li>
+        </ul>
+        <div class="mt-10 flex items-center gap-6">
+          <a href="#contact" class="px-8 py-4 gold-btn rounded shadow-lg hover:opacity-90 transition">Plan uw exclusieve intake</a> <a href="#waarden" class="text-sm text-gray-400 hover:text-[var(--gold-light)]">Bekijk de volledige value stack ��'</a>
+        </div>
+        <div class="mt-6 text-sm text-gray-400">
+          Prijs: <span class="font-semibold text-[var(--gold-light)]">�'�9.997 / maand</span> �_" initieel contract: 4 maanden.
+        </div>
+      </div>
+      <div class="lux-card rounded-2xl p-8">
+        <div class="flex items-center justify-between">
+          <div>
+            <h3 class="text-sm text-gray-400">Voor serieuze luxemerken</h3>
+            <h2 class="text-2xl font-bold gold-text">Gegarandeerde groei. Geen risico.</h2>
+          </div>
+          <div class="text-right">
+            <div class="text-xs text-gray-500">
+              Stickerprijs
+            </div>
+            <div class="text-xl font-semibold text-[var(--gold-light)]">
+              �'�32.500
+            </div>
+          </div>
+        </div>
+        <div class="mt-6 grid gap-4">
+          <div class="p-4 bg-black rounded-lg border gold-border">
+            <p class="text-sm text-gray-300">Binnen 120 dagen: min. <strong class="text-[var(--gold-light)]">3:1 ROAS</strong> of <strong class="text-[var(--gold-light)]">30% stijging Traffic Value</strong>.</p>
+          </div>
+          <div class="p-4 bg-black rounded-lg border gold-border">
+            <p class="text-sm text-gray-300">Garantie: wij werken gratis door tot het afgesproken resultaat is bereikt �_" u betaalt geen extra managementkosten.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="waarden" class="py-16">
+      <div class="lux-card rounded-2xl p-8">
+        <h3 class="text-2xl font-bold gold-text">Waarde Stapel</h3>
+        <p class="mt-2 text-gray-400">De totale gepercipieerde waarde van dit exclusieve programma.</p>
+        <div class="mt-6 overflow-x-auto">
+          <table class="min-w-full text-left border-collapse text-gray-300">
+            <thead class="text-[var(--gold-light)]">
+              <tr>
+                <th class="py-3 pr-6">Component</th>
+                <th class="py-3 pr-6">Beschrijving</th>
+                <th class="py-3 text-right">Waarde</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="py-4">AI-Gedreven SEO & Content</td>
+                <td class="py-4">Volledige AI-audit & strategie voor 6 maanden.</td>
+                <td class="py-4 text-right text-[var(--gold-light)] font-semibold">�'�15.000</td>
+              </tr>
+              <tr>
+                <td class="py-4">Premium Conversie Machine</td>
+                <td class="py-4">High-converting funnel voor luxe doelgroepen.</td>
+                <td class="py-4 text-right text-[var(--gold-light)] font-semibold">�'�8.000</td>
+              </tr>
+              <tr>
+                <td class="py-4">No-Risk Ads Optimalisatie</td>
+                <td class="py-4">Audit & exclusieve luxe audiences.</td>
+                <td class="py-4 text-right text-[var(--gold-light)] font-semibold">�'�6.500</td>
+              </tr>
+              <tr>
+                <td class="py-4">Exclusieve Markt Inzichten</td>
+                <td class="py-4">Halfjaarlijks AI & luxe trendrapport.</td>
+                <td class="py-4 text-right text-[var(--gold-light)] font-semibold">�'�3.000</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td class="py-4 font-semibold">Totaal</td>
+                <td></td>
+                <td class="py-4 text-right font-bold text-[var(--gold-light)]">�'�32.500</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+        <div class="mt-6 flex items-center justify-between">
+          <div>
+            <div class="text-sm text-gray-400">
+              Uw investering
+            </div>
+            <div class="text-2xl font-extrabold text-[var(--gold-light)]">
+              �'�9.997 / maand
+            </div>
+          </div><a href="#contact" class="px-6 py-3 gold-btn rounded">Claim intake</a>
+        </div>
+      </div>
+    </section>
+    <section id="garantie" class="py-16">
+      <div class="lux-card rounded-2xl p-8">
+        <h3 class="text-2xl font-bold gold-text">De 'Winstgevendheid of Geld Terug' Garantie</h3>
+        <p class="mt-3 text-gray-300">Geen resultaat? Dan werken wij <strong class="text-[var(--gold-light)]">gratis</strong> door tot de doelen behaald zijn.</p>
+        <div class="mt-6 grid md:grid-cols-3 gap-6">
+          <div class="p-4 bg-black rounded-lg border gold-border">
+            <h4 class="font-semibold text-[var(--gold-light)]">Wat we garanderen</h4>
+            <p class="mt-2 text-sm text-gray-300">Meetbare ROAS of Traffic Value binnen 120 dagen.</p>
+          </div>
+          <div class="p-4 bg-black rounded-lg border gold-border">
+            <h4 class="font-semibold text-[var(--gold-light)]">Uw risico</h4>
+            <p class="mt-2 text-sm text-gray-300">Geen extra kosten tot het doel is gehaald.</p>
+          </div>
+          <div class="p-4 bg-black rounded-lg border gold-border">
+            <h4 class="font-semibold text-[var(--gold-light)]">Transparantie</h4>
+            <p class="mt-2 text-sm text-gray-300">Wekelijkse KPI-rapportage & live dashboard.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-16">
+      <h3 class="text-2xl font-bold gold-text">Selecte Cases</h3>
+      <div class="mt-6 grid md:grid-cols-3 gap-6">
+        <div class="p-6 bg-black rounded-lg border gold-border">
+          <div class="text-sm text-[var(--gold-light)]">
+            High-end juweliers
+          </div>
+          <div class="mt-3 font-semibold text-gray-100">
+            +220% omzetgroei
+          </div>
+        </div>
+        <div class="p-6 bg-black rounded-lg border gold-border">
+          <div class="text-sm text-[var(--gold-light)]">
+            Wellness retreats
+          </div>
+          <div class="mt-3 font-semibold text-gray-100">
+            3:1 ROAS in 120 dagen
+          </div>
+        </div>
+        <div class="p-6 bg-black rounded-lg border gold-border">
+          <div class="text-sm text-[var(--gold-light)]">
+            Exclusieve B2B-services
+          </div>
+          <div class="mt-3 font-semibold text-gray-100">
+            +30% traffic value
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-16">
+      <h3 class="text-2xl font-bold gold-text">Veelgestelde Vragen</h3>
+      <div class="mt-6 space-y-4">
+        <details class="p-4 bg-black rounded-lg border gold-border">
+          <summary class="text-[var(--gold-light)] font-semibold">
+            Hoe definieert u 'Traffic Value'?
+          </summary>
+          <p class="mt-2 text-sm text-gray-300">Op basis van CPC-waarden & conversieratio's.</p>
+        </details>
+        <details class="p-4 bg-black rounded-lg border gold-border">
+          <summary class="text-[var(--gold-light)] font-semibold">
+            Wat als we al een bureau hebben?
+          </summary>
+          <p class="mt-2 text-sm text-gray-300">Wij verzorgen een naadloze overgang.</p>
+        </details>
+        <details class="p-4 bg-black rounded-lg border gold-border">
+          <summary class="text-[var(--gold-light)] font-semibold">
+            Welke garanties staan in het contract?
+          </summary>
+          <p class="mt-2 text-sm text-gray-300">Alles wordt contractueel vastgelegd.</p>
+        </details>
+      </div>
+    </section>
+    <section id="contact" class="py-16">
+      <div class="lux-card rounded-2xl p-8">
+        <h3 class="text-2xl font-bold gold-text">Claim uw exclusieve intake</h3>
+        <p class="mt-2 text-gray-300">Wij werken met max. <strong class="text-[var(--gold-light)]">10 merken</strong> per jaar.</p>
+        <form class="mt-6 grid gap-4 md:grid-cols-2" onsubmit="event.preventDefault(); alert('Dank �_" we nemen contact op!');">
+          <input required="" placeholder="Naam / Bedrijf" class="p-3 bg-black border gold-border rounded text-gray-100"> <input required="" type="email" placeholder="E-mail" class="p-3 bg-black border gold-border rounded text-gray-100"> <input placeholder="Telefoon (optioneel)" class="p-3 bg-black border gold-border rounded text-gray-100"> <select class="p-3 bg-black border gold-border rounded text-gray-100">
+            <option>
+              Budget indicatie
+            </option>
+            <option>
+              �'�5k - �'�10k / maand
+            </option>
+            <option>
+              �'�10k - �'�25k / maand
+            </option>
+            <option>
+              &gt; �'�25k / maand
+            </option>
+          </select> 
+          <textarea placeholder="Waar wilt u mee groeien?" class="p-3 bg-black border gold-border rounded text-gray-100 md:col-span-2"></textarea>
+          <div class="md:col-span-2 flex items-center justify-between">
+            <div class="text-sm text-gray-400">
+              Door te verzenden gaat u akkoord met privacy & contact.
+            </div><button class="px-6 py-3 gold-btn rounded">Reserveer intake</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="py-12 text-center text-sm text-gray-500 border-t border-[var(--gold-dark)]">
+    <div>
+      �� <strong class="text-[var(--gold-light)]">Marcodonato Digital Luxe B.V.</strong> �_" Exclusief voor premium merken
+    </div>
+  </footer>
+</body>
+</html>

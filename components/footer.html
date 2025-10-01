@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Well To Do Front Scorpion</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;  -webkit-font-smoothing: antialiased;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;  color: inherit;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}pre {  white-space: normal;}input {  padding: 2px 4px;}img {  display: block;}details {  display: block;  margin: 0;  padding: 0;}summary::-webkit-details-marker {  display: none;}[data-thq="accordion"] [data-thq="accordion-content"] {  max-height: 0;  overflow: hidden;  transition: max-height 0.3s ease-in-out;  padding: 0;}[data-thq="accordion"] details[data-thq="accordion-trigger"][open] + [data-thq="accordion-content"] {  max-height: 1000vh;}details[data-thq="accordion-trigger"][open] summary [data-thq="accordion-icon"] {  transform: rotate(180deg);}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 1rem;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: undefined;
+        text-transform: undefined;
+        letter-spacing: normal;
+        line-height: 1.55;
+        color: var(--color-on-surface);
+        background: var(--color-surface);
+
+        fill: var(--color-on-surface);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="../style.css" />
+    <div>
+      <link href="./footer.css" rel="stylesheet" />
+      <div class="footer-container">
+        <footer class="footer">
+          <div class="footer-container">
+            <div class="footer-divider">
+              <svg viewBox="0 0 1200 120" class="footer-curve">
+                <path
+                  d="M0,0 C150,80 350,80 600,40 C850,0 1050,40 1200,20 L1200,120 L0,120 Z"
+                  fill="var(--color-surface-elevated)"
+                ></path>
+              </svg>
+            </div>
+            <div class="footer-content">
+              <div class="footer-brand-section">
+                <div class="footer-brand">
+                  <h3 class="footer-brand-title">Marcodonato Luxe</h3>
+                  <p class="footer-brand-tagline">
+                    Exclusieve AI-gedreven digital marketing voor luxe merken
+                  </p>
+                </div>
+                <div class="footer-trust-badges">
+                  <div class="footer-badge">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"
+                      ></path>
+                    </svg>
+                    <span>3:1 ROAS Garantie</span>
+                  </div>
+                  <div class="footer-badge">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <g
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                      >
+                        <path
+                          d="m15.477 12.89l1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"
+                        ></path>
+                        <circle cx="12" cy="8" r="6"></circle>
+                      </g>
+                    </svg>
+                    <span>Exclusief voor 10 merken</span>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-navigation">
+                <div class="footer-nav-column">
+                  <h4 class="footer-nav-title">Programma</h4>
+                  <ul class="footer-nav-list">
+                    <li>
+                      <a href="#">
+                        <div class="footer-nav-link">
+                          <span>120-Dagen Protocol</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="footer-nav-link">
+                          <span>AI-Audit &amp; Strategie</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="footer-nav-link">
+                          <span>Premium Conversiefunnel</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="footer-nav-link">
+                          <span>No-Risk Optimalisatie</span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer-nav-column">
+                  <h4 class="footer-nav-title">Resultaten</h4>
+                  <ul class="footer-nav-list">
+                    <li>
+                      <a href="live-dashboard.html">
+                        <div class="footer-nav-link">
+                          <span>Live Dashboard</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="footer-nav-link">
+                          <span>Klant Cases</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="footer-nav-link">
+                          <span>Meetbare Groei</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="footer-nav-link">
+                          <span>Marktinzichten</span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer-nav-column">
+                  <h4 class="footer-nav-title">Over Ons</h4>
+                  <ul class="footer-nav-list">
+                    <li>
+                      <a href="index.html">
+                        <div class="footer-nav-link"><span>Homepage</span></div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="footer-nav-link">
+                          <span>Onze Aanpak</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="footer-nav-link">
+                          <span>White-Glove Service</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="footer-nav-link">
+                          <span>Expertise Team</span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer-contact-section">
+                <div class="footer-cta">
+                  <h4 class="footer-cta-title">
+                    Klaar voor Digitale Overheersing?
+                  </h4>
+                  <p class="footer-cta-text">
+                    Claim uw exclusieve intake en ontdek hoe wij uw luxe merk
+                    naar nieuwe hoogten brengen.
+                  </p>
+                  <a href="intake-aanvragen.html">
+                    <div class="footer-cta-button btn btn-primary">
+                      <span>Exclusieve Intake Claimen</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="footer-contact">
+                  <h4 class="footer-contact-title">Direct Contact</h4>
+                  <div class="footer-contact-items">
+                    <a href="mailto:info@marcodonatoluxe.nl?subject=">
+                      <div class="footer-contact-item">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <g
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                          >
+                            <path
+                              d="m22 7l-8.991 5.727a2 2 0 0 1-2.009 0L2 7"
+                            ></path>
+                            <rect
+                              width="20"
+                              height="16"
+                              x="2"
+                              y="4"
+                              rx="2"
+                            ></rect>
+                          </g>
+                        </svg>
+                        <span>info@marcodonatoluxe.nl</span>
+                      </div>
+                    </a>
+                    <a href="tel:+31207001234">
+                      <div class="footer-contact-item">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233a14 14 0 0 0 6.392 6.384"
+                          ></path>
+                        </svg>
+                        <span>+31 20 700 1234</span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="footer-social">
+                    <a href="#">
+                      <div aria-label="LinkedIn" class="footer-social-link">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <g
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                          >
+                            <path
+                              d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2a2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6M2 9h4v12H2z"
+                            ></path>
+                            <circle cx="4" cy="4" r="2"></circle>
+                          </g>
+                        </svg>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div aria-label="Instagram" class="footer-social-link">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <g
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                          >
+                            <rect
+                              width="20"
+                              height="20"
+                              x="2"
+                              y="2"
+                              rx="5"
+                              ry="5"
+                            ></rect>
+                            <path
+                              d="M16 11.37A4 4 0 1 1 12.63 8A4 4 0 0 1 16 11.37m1.5-4.87h.01"
+                            ></path>
+                          </g>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer-legal">
+              <div class="footer-legal-content">
+                <p class="footer-copyright">
+                  © 2025 Marcodonato Digital Luxe B.V. Alle rechten
+                  voorbehouden.
+                </p>
+                <div class="footer-legal-links">
+                  <a href="#">
+                    <div class="footer-legal-link">
+                      <span>Privacybeleid</span>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div class="footer-legal-link">
+                      <span>Algemene Voorwaarden</span>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div class="footer-legal-link">
+                      <span>Cookie Beleid</span>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div class="footer-legal-link">
+                      <span>Garantie Voorwaarden</span>
+                    </div>
+                  </a>
+                </div>
+                <p class="footer-legal-text">
+                  KvK: 87654321 | BTW: NL123456789B01
+                </p>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

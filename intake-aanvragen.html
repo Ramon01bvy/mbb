@@ -1,0 +1,1691 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Intake-aanvragen - Well To Do Front Scorpion</title>
+    <meta
+      property="og:title"
+      content="Intake-aanvragen - Well To Do Front Scorpion"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;  -webkit-font-smoothing: antialiased;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;  color: inherit;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}pre {  white-space: normal;}input {  padding: 2px 4px;}img {  display: block;}details {  display: block;  margin: 0;  padding: 0;}summary::-webkit-details-marker {  display: none;}[data-thq="accordion"] [data-thq="accordion-content"] {  max-height: 0;  overflow: hidden;  transition: max-height 0.3s ease-in-out;  padding: 0;}[data-thq="accordion"] details[data-thq="accordion-trigger"][open] + [data-thq="accordion-content"] {  max-height: 1000vh;}details[data-thq="accordion-trigger"][open] summary [data-thq="accordion-icon"] {  transform: rotate(180deg);}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 1rem;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: undefined;
+        text-transform: undefined;
+        letter-spacing: normal;
+        line-height: 1.55;
+        color: var(--color-on-surface);
+        background: var(--color-surface);
+
+        fill: var(--color-on-surface);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./intake-aanvragen.css" rel="stylesheet" />
+
+      <div class="intake-aanvragen-container1">
+        <navigation-wrapper class="navigation-wrapper">
+          <!--Navigation component-->
+          <div class="navigation-container1 navigation">
+            <div class="navigation-container2">
+              <div class="navigation-container3">
+                <style>
+                          @keyframes slideInLeft {to {transform: translateX(0);
+                  opacity: 1;}}@keyframes slideInUp {to {transform: translateY(0);
+                  opacity: 1;}}
+                </style>
+              </div>
+            </div>
+            <div class="navigation-container4">
+              <div class="navigation-container5">
+                <script defer="" data-name="navigation">
+                  (function(){
+                    const navigationToggle = document.getElementById('navigationToggle')
+                    const navigationMobileOverlay = document.getElementById(
+                      'navigationMobileOverlay'
+                    )
+                    const navigationMobileClose = document.getElementById('navigationMobileClose')
+
+                    function openMobileNavigation() {
+                      navigationMobileOverlay.classList.add('navigation-mobile-active')
+                      navigationToggle.setAttribute('aria-expanded', 'true')
+                      navigationToggle.setAttribute('aria-label', 'Menu sluiten')
+                      document.body.style.overflow = 'hidden'
+                    }
+
+                    function closeMobileNavigation() {
+                      navigationMobileOverlay.classList.remove('navigation-mobile-active')
+                      navigationToggle.setAttribute('aria-expanded', 'false')
+                      navigationToggle.setAttribute('aria-label', 'Menu openen')
+                      document.body.style.overflow = ''
+                    }
+
+                    navigationToggle.addEventListener('click', function () {
+                      if (
+                        navigationMobileOverlay.classList.contains('navigation-mobile-active')
+                      ) {
+                        closeMobileNavigation()
+                      } else {
+                        openMobileNavigation()
+                      }
+                    })
+
+                    navigationMobileClose.addEventListener('click', closeMobileNavigation)
+
+                    // Close mobile navigation when clicking on overlay
+                    navigationMobileOverlay.addEventListener('click', function (e) {
+                      if (e.target === navigationMobileOverlay) {
+                        closeMobileNavigation()
+                      }
+                    })
+
+                    // Close mobile navigation on escape key
+                    document.addEventListener('keydown', function (e) {
+                      if (
+                        e.key === 'Escape' &&
+                        navigationMobileOverlay.classList.contains('navigation-mobile-active')
+                      ) {
+                        closeMobileNavigation()
+                      }
+                    })
+
+                    // Handle mobile navigation links
+                    const mobileNavLinks = document.querySelectorAll(
+                      '.navigation-mobile-menu-link, .navigation-mobile-cta'
+                    )
+                    mobileNavLinks.forEach((link) => {
+                      link.addEventListener('click', function () {
+                        closeMobileNavigation()
+                      })
+                    })
+
+                    // Handle window resize
+                    window.addEventListener('resize', function () {
+                      if (
+                        window.innerWidth > 991 &&
+                        navigationMobileOverlay.classList.contains('navigation-mobile-active')
+                      ) {
+                        closeMobileNavigation()
+                      }
+                    })
+                  })()
+                </script>
+              </div>
+            </div>
+            <nav id="navigation" class="navigation">
+              <div class="navigation-container">
+                <div class="navigation-brand">
+                  <a href="index.html">
+                    <div
+                      aria-label="Marcodonato Luxe Homepage"
+                      class="navigation-logo"
+                    >
+                      <span
+                        class="navigation-navigation-logo-text1 navigation-logo-text"
+                      >
+                        Marcodonato Digital Luxe B.V.
+                      </span>
+                    </div>
+                  </a>
+                </div>
+                <div class="navigation-content">
+                  <ul id="navigationMenu" class="navigation-menu">
+                    <li class="navigation-menu-item">
+                      <a href="live-dashboard.html">
+                        <div class="navigation-menu-link">
+                          <span>Live Dashboard</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="navigation-menu-item">
+                      <a href="intake-aanvragen.html">
+                        <div class="navigation-menu-link">
+                          <span>Intake Aanvragen</span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="navigation-actions">
+                    <a href="intake-aanvragen.html">
+                      <div class="navigation-cta btn btn-primary">
+                        <span>Claim Exclusieve Intake</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <button
+                  id="navigationToggle"
+                  aria-label="Menu openen"
+                  aria-expanded="false"
+                  class="navigation-toggle"
+                >
+                  <div
+                    id="navigationToggleIcon"
+                    class="navigation-navigation-toggle-icon"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M4 5h16M4 12h16M4 19h16"
+                      ></path>
+                    </svg>
+                  </div>
+                </button>
+              </div>
+              <div
+                id="navigationMobileOverlay"
+                class="navigation-mobile-overlay"
+              >
+                <div class="navigation-mobile-content">
+                  <div class="navigation-mobile-header">
+                    <div class="navigation-brand">
+                      <a href="index.html">
+                        <div
+                          aria-label="Marcodonato Luxe Homepage"
+                          class="navigation-logo"
+                        >
+                          <span class="navigation-logo-text">Marcodonato</span>
+                          <span class="navigation-logo-accent">Luxe</span>
+                        </div>
+                      </a>
+                    </div>
+                    <button
+                      id="navigationMobileClose"
+                      aria-label="Menu sluiten"
+                      class="navigation-mobile-close"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M18 6L6 18M6 6l12 12"
+                        ></path>
+                      </svg>
+                    </button>
+                  </div>
+                  <ul class="navigation-mobile-menu">
+                    <li class="navigation-mobile-menu-item">
+                      <a href="live-dashboard.html">
+                        <div class="navigation-mobile-menu-link">
+                          <span>Live Dashboard</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="navigation-mobile-menu-item">
+                      <a href="intake-aanvragen.html">
+                        <div class="navigation-mobile-menu-link">
+                          <span>Intake Aanvragen</span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="navigation-mobile-actions">
+                    <a href="intake-aanvragen.html">
+                      <div class="navigation-mobile-cta btn btn-primary">
+                        <span>Claim Exclusieve Intake</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </navigation-wrapper>
+        <div class="intake-aanvragen-container2">
+          <div class="intake-aanvragen-container3">
+            <style>
+                      @keyframes fadeInUp {from {opacity: 0;
+              transform: translateY(30px);}
+              to {opacity: 1;
+              transform: translateY(0);}}@keyframes fadeIn {from {opacity: 0;}
+              to {opacity: 1;}}@keyframes slideInLeft {from {opacity: 0;
+              transform: translateX(-50px);}
+              to {opacity: 1;
+              transform: translateX(0);}}
+            </style>
+          </div>
+        </div>
+        <div class="intake-aanvragen-container4">
+          <div class="intake-aanvragen-container5">
+            <style>
+              @media (prefers-reduced-motion: no-preference) {
+              .criteria-card, .process-card, .testimonial-card, .faq-item {
+                animation: fadeInUp var(--animation-duration-standard) var(--animation-curve-primary);
+              }
+              .hero-badge {
+                animation: fadeIn var(--animation-duration-slow) var(--animation-curve-primary);
+              }
+              .hero-title {
+                animation: slideInLeft var(--animation-duration-slow) var(--animation-curve-primary) 0.2s both;
+              }
+              .hero-subtitle {
+                animation: slideInLeft var(--animation-duration-slow) var(--animation-curve-primary) 0.4s both;
+              }
+              }
+            </style>
+          </div>
+        </div>
+        <div class="intake-aanvragen-container6">
+          <div class="intake-aanvragen-container7">
+            <script defer="" data-name="intake-page-interactions">
+              (function(){
+                // Smooth reveal animations for elements
+                const observerOptions = {
+                  threshold: 0.1,
+                  rootMargin: '0px 0px -50px 0px',
+                }
+
+                const observer = new IntersectionObserver((entries) => {
+                  entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                      entry.target.style.animationPlayState = 'running'
+                      observer.unobserve(entry.target)
+                    }
+                  })
+                }, observerOptions)
+
+                // Observe all animated elements
+                const animatedElements = document.querySelectorAll(
+                  '.criteria-card, .process-card, .testimonial-card, .faq-item'
+                )
+                animatedElements.forEach((el) => {
+                  el.style.animationPlayState = 'paused'
+                  observer.observe(el)
+                })
+
+                // Hero stats counter animation
+                const animateCounters = () => {
+                  const counters = document.querySelectorAll('.stat-number')
+
+                  counters.forEach((counter) => {
+                    const target = counter.textContent
+                    const isPercentage = target.includes('%')
+                    const isRatio = target.includes(':')
+
+                    if (isRatio) return // Skip ratio animations
+
+                    const numericValue = parseInt(target.replace(/[^\d]/g, ''))
+                    let current = 0
+                    const increment = numericValue / 60 // 60 frames animation
+
+                    const updateCounter = () => {
+                      if (current < numericValue) {
+                        current += increment
+                        counter.textContent = Math.ceil(current) + (isPercentage ? '%' : '')
+                        requestAnimationFrame(updateCounter)
+                      } else {
+                        counter.textContent = target // Ensure final value is exact
+                      }
+                    }
+
+                    updateCounter()
+                  })
+                }
+
+                // Trigger counter animation when hero section is visible
+                const heroObserver = new IntersectionObserver(
+                  (entries) => {
+                    entries.forEach((entry) => {
+                      if (entry.isIntersecting) {
+                        animateCounters()
+                        heroObserver.unobserve(entry.target)
+                      }
+                    })
+                  },
+                  { threshold: 0.5 }
+                )
+
+                const heroSection = document.querySelector('.hero-section')
+                if (heroSection) {
+                  heroObserver.observe(heroSection)
+                }
+
+                // Process cards staggered animation
+                const processCards = document.querySelectorAll('.process-card')
+                processCards.forEach((card, index) => {
+                  card.style.animationDelay = `${index * 0.1}s`
+                })
+
+                // Enhanced hover effects for interactive elements
+                const interactiveCards = document.querySelectorAll(
+                  '.criteria-card, .testimonial-card, .faq-item'
+                )
+                interactiveCards.forEach((card) => {
+                  card.addEventListener('mouseenter', () => {
+                    card.style.transform = 'translateY(-8px) scale(1.02)'
+                  })
+
+                  card.addEventListener('mouseleave', () => {
+                    card.style.transform = 'translateY(0) scale(1)'
+                  })
+                })
+
+                // CTA button enhanced interactions
+                const ctaButtons = document.querySelectorAll('.btn-primary, .btn-accent')
+                ctaButtons.forEach((button) => {
+                  button.addEventListener('click', (e) => {
+                    // Create ripple effect
+                    const ripple = document.createElement('span')
+                    const rect = button.getBoundingClientRect()
+                    const size = Math.max(rect.width, rect.height)
+                    const x = e.clientX - rect.left - size / 2
+                    const y = e.clientY - rect.top - size / 2
+
+                    ripple.style.width = ripple.style.height = size + 'px'
+                    ripple.style.left = x + 'px'
+                    ripple.style.top = y + 'px'
+                    ripple.style.position = 'absolute'
+                    ripple.style.borderRadius = '50%'
+                    ripple.style.background = 'rgba(255, 255, 255, 0.3)'
+                    ripple.style.transform = 'scale(0)'
+                    ripple.style.animation = 'ripple 0.6s linear'
+                    ripple.style.pointerEvents = 'none'
+
+                    button.style.position = 'relative'
+                    button.style.overflow = 'hidden'
+                    button.appendChild(ripple)
+
+                    setTimeout(() => {
+                      ripple.remove()
+                    }, 600)
+                  })
+                })
+
+                // Add ripple animation keyframes
+                const style = document.createElement('style')
+                style.textContent = `
+                @keyframes ripple {
+                  to {
+                    transform: scale(2);
+                    opacity: 0;
+                  }
+                }
+              `
+                document.head.appendChild(style)
+
+                // Testimonials rotation highlight
+                const testimonialCards = document.querySelectorAll('.testimonial-card')
+                let currentHighlight = 0
+
+                const highlightTestimonial = () => {
+                  testimonialCards.forEach((card, index) => {
+                    if (index === currentHighlight) {
+                      card.style.borderColor = 'var(--color-accent)'
+                      card.style.borderWidth = '2px'
+                    } else {
+                      card.style.borderColor = 'var(--color-outline)'
+                      card.style.borderWidth = '1px'
+                    }
+                  })
+
+                  currentHighlight = (currentHighlight + 1) % testimonialCards.length
+                }
+
+                // Start testimonial rotation when section is visible
+                const testimonialObserver = new IntersectionObserver(
+                  (entries) => {
+                    entries.forEach((entry) => {
+                      if (entry.isIntersecting) {
+                        setInterval(highlightTestimonial, 3000)
+                        testimonialObserver.unobserve(entry.target)
+                      }
+                    })
+                  },
+                  { threshold: 0.3 }
+                )
+
+                const testimonialsSection = document.querySelector('.testimonials-section')
+                if (testimonialsSection) {
+                  testimonialObserver.observe(testimonialsSection)
+                }
+              })()
+            </script>
+          </div>
+        </div>
+        <section class="hero-section1">
+          <div class="hero-video-container">
+            <video
+              autoplay="true"
+              muted="true"
+              loop="true"
+              src="https://videos.pexels.com/video-files/29848606/12817769_640_360_30fps.mp4"
+              class="hero-video"
+            ></video>
+            <div class="hero-overlay2"></div>
+          </div>
+          <div class="hero-content2">
+            <div class="hero-content-inner">
+              <div class="hero-text-block">
+                <div class="hero-badge2">
+                  <span>Maximaal 10 merken per jaar</span>
+                </div>
+                <h1 class="hero-title">
+                  Exclusieve intake — digitale overheersing
+                </h1>
+                <p class="hero-subtitle">
+                  Slechts tien selecties. Eén onvoorwaardelijke belofte. Meld uw
+                  luxe merk aan voor onze 120-Dagen Digitale Overheersing en
+                  ontvang een op maat gemaakte groeistrategie met gegarandeerde
+                  uitkomst.
+                </p>
+                <div class="hero-stats1">
+                  <div class="stat-item1">
+                    <div class="stat-number1"><span>3:1</span></div>
+                    <div class="stat-label1">
+                      <span>Gegarandeerde ROAS</span>
+                    </div>
+                  </div>
+                  <div class="stat-divider"></div>
+                  <div class="stat-item1">
+                    <div class="stat-number1"><span>30%</span></div>
+                    <div class="stat-label1">
+                      <span>Traffic Value groei</span>
+                    </div>
+                  </div>
+                  <div class="stat-divider"></div>
+                  <div class="stat-item1">
+                    <div class="stat-number1"><span>120</span></div>
+                    <div class="stat-label1"><span>Dagen garantie</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="hero-cta-section">
+                <button class="btn btn-primary btn-xl">
+                  Claim uw exclusieve intake
+                </button>
+                <p class="hero-cta-note">
+                  Voor ambitieuze luxemerken die alleen genoegen nemen met
+                  meetbare, risk-free vooruitgang.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="eligibility-section">
+          <div class="section-container1">
+            <div class="section-header">
+              <h2 class="section-title">
+                Exclusiviteits &amp; selectiecriteria
+              </h2>
+              <p class="section-subtitle">
+                Wij accepteren uitsluitend merken die voldoen aan onze
+                stringente kwaliteitsnormen
+              </p>
+            </div>
+            <div class="criteria-grid">
+              <div class="criteria-card">
+                <div class="criteria-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.12 2.12 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.12 2.12 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.12 2.12 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.12 2.12 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.12 2.12 0 0 0 1.597-1.16z"
+                    ></path>
+                  </svg>
+                </div>
+                <h3>Exclusiviteit</h3>
+                <p>
+                  Maximaal 10 nieuwe merken per jaar. Uw merk moet een
+                  duidelijke luxe- of premiumpositionering hebben met bewezen
+                  kwaliteit en sterke visuele identiteit.
+                </p>
+              </div>
+              <div class="criteria-card">
+                <div class="criteria-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    >
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <circle cx="12" cy="12" r="6"></circle>
+                      <circle cx="12" cy="12" r="2"></circle>
+                    </g>
+                  </svg>
+                </div>
+                <h3>Selectiecriteria</h3>
+                <p>
+                  High-end juweliers, designerlabels, boutique hospitality, luxe
+                  wellnessretreats en vergelijkbare categorieën met een bewezen
+                  product- of dienstkwaliteit.
+                </p>
+              </div>
+              <div class="criteria-card">
+                <div class="criteria-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M16 3.128a4 4 0 0 1 0 7.744M22 21v-2a4 4 0 0 0-3-3.87"
+                      ></path>
+                      <circle cx="9" cy="7" r="4"></circle>
+                    </g>
+                  </svg>
+                </div>
+                <h3>Operationele vereisten</h3>
+                <p>
+                  White-glove onboarding, toegang tot relevante data en een
+                  toegewezen interne contactpersoon die snel beslissingen kan
+                  nemen.
+                </p>
+              </div>
+              <div class="criteria-card">
+                <div class="criteria-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"
+                    ></path>
+                  </svg>
+                </div>
+                <h3>Commitment</h3>
+                <p>
+                  Minimaal contract van vier maanden en actieve samenwerking
+                  gedurende het 120-Dagen 'Digitale Overheersing' Protocol voor
+                  meetbare resultaten.
+                </p>
+              </div>
+              <div class="criteria-card">
+                <div class="criteria-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    >
+                      <path d="M16 7h6v6"></path>
+                      <path d="m22 7l-8.5 8.5l-5-5L2 17"></path>
+                    </g>
+                  </svg>
+                </div>
+                <h3>Resultaatgerichte verwachting</h3>
+                <p>
+                  Bereid zijn KPI-doelen te omarmen en beschikbaar zijn voor
+                  wekelijkse KPI-reviewsessies en strategische besluitvorming.
+                </p>
+              </div>
+              <div class="criteria-card">
+                <div class="criteria-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="m15.477 12.89l1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"
+                      ></path>
+                      <circle cx="12" cy="8" r="6"></circle>
+                    </g>
+                  </svg>
+                </div>
+                <h3>Cultuurfit</h3>
+                <p>
+                  Merken die streven naar verfijning, langetermijnwaarde boven
+                  snelle kortingen waarderen, en openstaan voor strategische
+                  begeleiding.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="process-section">
+          <div class="section-container1">
+            <div class="section-header">
+              <h2 class="section-title">Het intakeproces</h2>
+              <p class="section-subtitle">
+                Zeven gestructureerde stappen naar digitale overheersing
+              </p>
+            </div>
+            <div class="process-masonry">
+              <div class="process-card process-card-1">
+                <div class="process-number"><span>01</span></div>
+                <h3>Exclusieve aanvraag</h3>
+                <p>
+                  Vul ons korte intakeformulier in. We vragen om kerngegevens en
+                  uw strategische ambitie zodat we direct kunnen beoordelen of
+                  uw merk past bij onze selecte portfolio.
+                </p>
+                <div class="process-timeline">
+                  <span>72 uur responstijd</span>
+                </div>
+              </div>
+              <div class="process-card process-card-2">
+                <div class="process-number"><span>02</span></div>
+                <h3>Voorselectie &amp; profielanalyse</h3>
+                <p>
+                  Ons team beoordeelt uw merkprofiel, marktpositie en huidige
+                  digitale footprint. Alleen zorgvuldig geselecteerde merken
+                  gaan door naar de AI-audit.
+                </p>
+                <div class="process-image">
+                  <img
+                    src="https://images.pexels.com/photos/5060809/pexels-photo-5060809.jpeg"
+                    alt="Professional assessment"
+                  />
+                </div>
+              </div>
+              <div class="process-card process-card-3">
+                <div class="process-number"><span>03</span></div>
+                <h3>AI-Audit &amp; waardebepaling</h3>
+                <p>
+                  Diepgaande, op maat gemaakte AI-audit van SEO, content en
+                  traffic value. U ontvangt een luxe rapport met concrete kansen
+                  en geschatte Traffic Value-verhoging.
+                </p>
+              </div>
+              <div class="process-card process-card-4">
+                <div class="process-number"><span>04</span></div>
+                <h3>Discovery Call</h3>
+                <p>
+                  Hoogwaardige, gefaciliteerde sessie met uw Account Director.
+                  We bespreken AI-audit inzichten, commerciële doelstellingen en
+                  de 120-Dagen routekaart.
+                </p>
+                <div class="process-image">
+                  <img
+                    src="https://images.pexels.com/photos/5778474/pexels-photo-5778474.jpeg"
+                    alt="Business meeting"
+                  />
+                </div>
+              </div>
+              <div class="process-card process-card-5">
+                <div class="process-number"><span>05</span></div>
+                <h3>Strategische propositie</h3>
+                <p>
+                  Op maat gemaakt voorstel met verwachte ROAS- en trafficdoelen,
+                  deliverables en tijdslijn. Acceptatie bevestigt uw plek in
+                  onze exclusieve cohort.
+                </p>
+              </div>
+              <div class="process-card process-card-6">
+                <div class="process-number"><span>06</span></div>
+                <h3>White-glove onboarding</h3>
+                <p>
+                  Toegewezen persoonlijke Account Director en toegang tot ons
+                  live dashboard. Technische implementatie, content-roadmap en
+                  advertentie-snelstart.
+                </p>
+              </div>
+              <div class="process-card process-card-7">
+                <div class="process-number"><span>07</span></div>
+                <h3>120-Dagen uitvoering</h3>
+                <p>
+                  Gerichte campagnes, continue AI-optimalisatie en wekelijkse
+                  KPI-rapportages. Ons no-risk commitment blijft van kracht
+                  totdat doelen zijn bereikt.
+                </p>
+                <div class="process-guarantee">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"
+                    ></path>
+                  </svg>
+                  <span>Winstgevendheid gegarandeerd</span>
+                </div>
+              </div>
+              <div class="process-card process-card-8">
+                <div class="process-number"><span>∞</span></div>
+                <h3>Wat u mag verwachten</h3>
+                <p>
+                  Heldere tijdslijn, discrete communicatie, persoonlijke
+                  begeleiding en een uitvoering die zowel creatief verfijnd als
+                  data-gedreven is.
+                </p>
+                <div class="process-image">
+                  <img
+                    src="https://images.pexels.com/photos/13009437/pexels-photo-13009437.jpeg"
+                    alt="Luxury experience"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="guarantees-section">
+          <div class="section-container1">
+            <div class="guarantees-grid">
+              <div class="guarantee-main">
+                <div class="guarantee-badge2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"
+                    ></path>
+                  </svg>
+                  <span>Winstgevendheid of Geld Terug</span>
+                </div>
+                <h2 class="section-title">Onze Garantie</h2>
+                <p class="guarantee-description">
+                  Binnen 120 dagen realiseren wij minimaal een ROAS van 3:1 of
+                  een stijging van minimaal 30% in Traffic Value. Als die
+                  doelstellingen niet worden behaald, werken wij kosteloos door
+                  totdat ze wel zijn bereikt.
+                </p>
+              </div>
+              <div class="guarantee-features">
+                <div class="feature-item1">
+                  <div class="feature-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M20 6L9 17l-5-5"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="feature-content">
+                    <h4>Duidelijke KPI's</h4>
+                    <p>
+                      Vooraf vastgestelde ROAS- en Traffic Value-doelen,
+                      afgestemd op uw merkambities
+                    </p>
+                  </div>
+                </div>
+                <div class="feature-item1">
+                  <div class="feature-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M20 6L9 17l-5-5"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="feature-content">
+                    <h4>Transparante rapportage</h4>
+                    <p>
+                      Wekelijkse KPI-updates en een live dashboard waarmee u
+                      prestaties realtime volgt
+                    </p>
+                  </div>
+                </div>
+                <div class="feature-item1">
+                  <div class="feature-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M20 6L9 17l-5-5"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="feature-content">
+                    <h4>No-risk optimalisatie</h4>
+                    <p>
+                      Advertentiebudgetten worden proactief geoptimaliseerd door
+                      onze AI-gestuurde systemen
+                    </p>
+                  </div>
+                </div>
+                <div class="feature-item1">
+                  <div class="feature-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M20 6L9 17l-5-5"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="feature-content">
+                    <h4>Resultaatverantwoordelijkheid</h4>
+                    <p>
+                      Als we niet leveren, betaalt u geen extra managementkosten
+                      totdat resultaten zijn bereikt
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="roi-metrics">
+                <h3>Concrete uitkomsten</h3>
+                <div class="metrics-grid">
+                  <div class="metric-card">
+                    <div class="metric-value1"><span>3:1</span></div>
+                    <div class="metric-label1"><span>Minimale ROAS</span></div>
+                  </div>
+                  <div class="metric-card">
+                    <div class="metric-value1"><span>30%</span></div>
+                    <div class="metric-label1">
+                      <span>Traffic Value groei</span>
+                    </div>
+                  </div>
+                  <div class="metric-card">
+                    <div class="metric-value1"><span>220%</span></div>
+                    <div class="metric-label1">
+                      <span>Maximale omzetgroei</span>
+                    </div>
+                  </div>
+                  <div class="metric-card">
+                    <div class="metric-value1"><span>120</span></div>
+                    <div class="metric-label1"><span>Dagen garantie</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="guarantee-cta">
+                <p>
+                  Klaar om de zekerheid van digitale overheersing te claimen?
+                </p>
+                <button class="btn btn-accent btn-lg">
+                  Vraag uw intake aan
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="apply-section">
+          <div class="section-container1">
+            <div class="apply-split">
+              <div class="apply-content">
+                <h2 class="section-title">Klaar voor uw exclusieve intake?</h2>
+                <p class="apply-description">
+                  Claim uw plaats in het selecte cohort van maximaal 10 luxe
+                  merken per jaar. Start vandaag met een korte, elegante intake.
+                </p>
+                <div class="apply-steps">
+                  <div class="apply-step">
+                    <div class="step-number"><span>1</span></div>
+                    <div class="step-content">
+                      <h4>Aanmeldformulier</h4>
+                      <p>
+                        Vul het beknopte intakeformulier in (5 minuten). Alleen
+                        serieuze aanvragen worden geaccepteerd.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="apply-step">
+                    <div class="step-number"><span>2</span></div>
+                    <div class="step-content">
+                      <h4>Selectiegesprek</h4>
+                      <p>
+                        Persoonlijk gesprek met uw toegewezen account director —
+                        maximaal 30 minuten.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="apply-step">
+                    <div class="step-number"><span>3</span></div>
+                    <div class="step-content">
+                      <h4>Strategische validatie</h4>
+                      <p>
+                        Gratis AI-audit preview en voorstel binnen 7 werkdagen.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="contact-details">
+                  <p class="contact-note">
+                    Voor directe vragen of prioriteitsplaatsing:
+                  </p>
+                  <div class="contact-methods">
+                    <a href="tel:+31201234567">
+                      <div class="contact-method">
+                        <span>+31 (0)20 123 4567</span>
+                      </div>
+                    </a>
+                    <a href="mailto:intake@marcodonato.nl?subject=">
+                      <div class="contact-method">
+                        <span>intake@marcodonato.nl</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="apply-cta">
+                <div class="cta-card">
+                  <h3>Bevestig uw aanvraag</h3>
+                  <p>
+                    Aantal plaatsen strikt beperkt — beslis met luxe en
+                    zekerheid.
+                  </p>
+                  <button class="btn btn-primary btn-xl">Aanmelden</button>
+                  <p class="cta-guarantee">
+                    Winstgevendheid of geld terug binnen 120 dagen
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="faq-section">
+          <div class="section-container1">
+            <div class="section-header">
+              <h2 class="section-title">Frequently Asked Questions</h2>
+              <p class="section-subtitle">
+                Antwoorden op de meest gestelde vragen over onze exclusieve
+                dienstverlening
+              </p>
+            </div>
+            <div class="faq-grid">
+              <div class="faq-item">
+                <h4 class="faq-question">
+                  Wat zijn uw tarieven en wat is inbegrepen?
+                </h4>
+                <p class="faq-answer">
+                  €9.997 per maand met een initieel contract van vier maanden.
+                  Dit omvat de volledige 120-Dagen Digitale Overheersing
+                  inclusief AI-audit, premium SEO- en contentstrategie, en
+                  toegang tot ons live dashboard.
+                </p>
+              </div>
+              <div class="faq-item">
+                <h4 class="faq-question">Is er een prestatiegarantie?</h4>
+                <p class="faq-answer">
+                  Ja. Wij garanderen binnen 120 dagen minimaal een 3:1 ROAS of
+                  een stijging van 30% in Traffic Value. Als we deze doelen niet
+                  halen, werken wij zonder extra managementkosten door.
+                </p>
+              </div>
+              <div class="faq-item">
+                <h4 class="faq-question">Hoe lang loopt het contract?</h4>
+                <p class="faq-answer">
+                  Het initiële contract duurt vier maanden — de minimale periode
+                  om onze strategie volledig te implementeren. Na deze periode
+                  loopt het contract maandelijks door met één maand
+                  opzegtermijn.
+                </p>
+              </div>
+              <div class="faq-item">
+                <h4 class="faq-question">Werkt u met vaste deliverables?</h4>
+                <p class="faq-answer">
+                  Ja. U ontvangt een startpakket tijdens onboarding, wekelijkse
+                  KPI-updates en een halfjaarlijks strategisch rapport. Alle
+                  resultaten zijn gedocumenteerd in uw persoonlijke dashboard.
+                </p>
+              </div>
+              <div class="faq-item">
+                <h4 class="faq-question">
+                  Waarom een limiet van 10 merken per jaar?
+                </h4>
+                <p class="faq-answer">
+                  De limiet van 10 merken garandeert dedicated aandacht, snelle
+                  besluitvoering en een white-glove benadering — essentieel voor
+                  uitzonderlijke, meetbare groei bij premium merken.
+                </p>
+              </div>
+              <div class="faq-item">
+                <h4 class="faq-question">Hoe snel kunnen we starten?</h4>
+                <p class="faq-answer">
+                  Na een succesvolle intake en ondertekening plannen we uw
+                  white-glove onboarding binnen 7–14 werkdagen, afhankelijk van
+                  beschikbaarheid en toegang tot benodigde data.
+                </p>
+              </div>
+              <div class="faq-item">
+                <h4 class="faq-question">
+                  Welke garanties zijn er rondom vertrouwelijkheid?
+                </h4>
+                <p class="faq-answer">
+                  Diskretie en merkintegriteit zijn essentieel. Wij werken onder
+                  strikte NDA's en behandelen merkassets met de hoogste
+                  veiligheidsstandaarden.
+                </p>
+              </div>
+              <div class="faq-item">
+                <h4 class="faq-question">Hoe meten jullie succes?</h4>
+                <p class="faq-answer">
+                  Objectief via ROAS, Traffic Value, conversieratio's,
+                  gemiddelde orderwaarde en leadkwaliteit. KPI's worden vooraf
+                  afgestemd en we leveren wekelijkse updates plus halfjaarlijkse
+                  strategierapporten.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="testimonials-section">
+          <div class="section-container1">
+            <div class="section-header">
+              <h2 class="section-title">Wat onze selecte klanten zeggen</h2>
+              <p class="section-subtitle">
+                Resultaten die spreken voor exclusieve luxemerken
+              </p>
+            </div>
+            <div class="testimonials-grid">
+              <div class="testimonial-card">
+                <div class="testimonial-content">
+                  <p>
+                    "Marcodonato heeft onze verwachtingen overtroffen: in 120
+                    dagen een ROAS van 3,4 en een merkpositionering die echt
+                    luxe ademt."
+                  </p>
+                </div>
+                <div class="testimonial-author">
+                  <div class="author-info">
+                    <div class="author-name"><span>Eigenaar</span></div>
+                    <div class="author-company">
+                      <span>Haute Joaillerie</span>
+                    </div>
+                    <div class="author-result">
+                      <span>220% omzetgroei</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-card">
+                <div class="testimonial-content">
+                  <p>
+                    "De persoonlijke aanpak en het AI-protocol leverden binnen
+                    vier maanden meetbare groei en een verfijnde klantenreis die
+                    onze verwachtingen herdefinieerde."
+                  </p>
+                </div>
+                <div class="testimonial-author">
+                  <div class="author-info">
+                    <div class="author-name"><span>CEO</span></div>
+                    <div class="author-company">
+                      <span>Luxe Wellness Retreat</span>
+                    </div>
+                    <div class="author-result">
+                      <span>3,8 ROAS binnen 90 dagen</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-card">
+                <div class="testimonial-content">
+                  <p>
+                    "Zelden zo'n scherp strategisch inzicht gezien. De
+                    funnel-conversies stegen 48% en onze LTV begon meteen te
+                    stijgen."
+                  </p>
+                </div>
+                <div class="testimonial-author">
+                  <div class="author-info">
+                    <div class="author-name">
+                      <span>Marketing Director</span>
+                    </div>
+                    <div class="author-company">
+                      <span>Bespoke Fashion House</span>
+                    </div>
+                    <div class="author-result">
+                      <span>48% conversie verbetering</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-card">
+                <div class="testimonial-content">
+                  <p>
+                    "White-glove service met harde KPI-resultaten. Wekelijkse
+                    rapportages en directe toegang tot het live dashboard
+                    hielden ons volledig betrokken."
+                  </p>
+                </div>
+                <div class="testimonial-author">
+                  <div class="author-info">
+                    <div class="author-name"><span>COO</span></div>
+                    <div class="author-company">
+                      <span>Premium Horlogemerk</span>
+                    </div>
+                    <div class="author-result"><span>4,2 ROAS</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-card">
+                <div class="testimonial-content">
+                  <p>
+                    "De exclusiviteit van hun selectieproces voelde als de
+                    juiste keuze: intensieve aandacht, premium creatieve
+                    uitvoering en een gegarandeerd resultaat."
+                  </p>
+                </div>
+                <div class="testimonial-author">
+                  <div class="author-info">
+                    <div class="author-name"><span>Eigenaar</span></div>
+                    <div class="author-company">
+                      <span>High-End Interieurstudio</span>
+                    </div>
+                    <div class="author-result">
+                      <span>65% traffic value groei</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-card">
+                <div class="testimonial-content">
+                  <p>
+                    "Dankzij Marcodonato's AI-audit en contentstrategie
+                    veroverden we binnen 120 dagen nieuwe high-value klanten —
+                    zonder risico, met meetbare winst."
+                  </p>
+                </div>
+                <div class="testimonial-author">
+                  <div class="author-info">
+                    <div class="author-name"><span>Founder</span></div>
+                    <div class="author-company">
+                      <span>Luxe Travel Portfolio</span>
+                    </div>
+                    <div class="author-result"><span>3,6 ROAS</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer-wrapper class="footer-wrapper">
+          <!--Footer component-->
+          <div class="footer-container">
+            <footer class="footer">
+              <div class="footer-container">
+                <div class="footer-divider">
+                  <svg viewBox="0 0 1200 120" class="footer-curve">
+                    <path
+                      d="M0,0 C150,80 350,80 600,40 C850,0 1050,40 1200,20 L1200,120 L0,120 Z"
+                      fill="var(--color-surface-elevated)"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="footer-content">
+                  <div class="footer-brand-section">
+                    <div class="footer-brand">
+                      <h3 class="footer-brand-title">Marcodonato Luxe</h3>
+                      <p class="footer-brand-tagline">
+                        Exclusieve AI-gedreven digital marketing voor luxe
+                        merken
+                      </p>
+                    </div>
+                    <div class="footer-trust-badges">
+                      <div class="footer-badge">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"
+                          ></path>
+                        </svg>
+                        <span>3:1 ROAS Garantie</span>
+                      </div>
+                      <div class="footer-badge">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <g
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                          >
+                            <path
+                              d="m15.477 12.89l1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"
+                            ></path>
+                            <circle cx="12" cy="8" r="6"></circle>
+                          </g>
+                        </svg>
+                        <span>Exclusief voor 10 merken</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="footer-navigation">
+                    <div class="footer-nav-column">
+                      <h4 class="footer-nav-title">Programma</h4>
+                      <ul class="footer-nav-list">
+                        <li>
+                          <a href="#">
+                            <div class="footer-nav-link">
+                              <span>120-Dagen Protocol</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="footer-nav-link">
+                              <span>AI-Audit &amp; Strategie</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="footer-nav-link">
+                              <span>Premium Conversiefunnel</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="footer-nav-link">
+                              <span>No-Risk Optimalisatie</span>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="footer-nav-column">
+                      <h4 class="footer-nav-title">Resultaten</h4>
+                      <ul class="footer-nav-list">
+                        <li>
+                          <a href="live-dashboard.html">
+                            <div class="footer-nav-link">
+                              <span>Live Dashboard</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="footer-nav-link">
+                              <span>Klant Cases</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="footer-nav-link">
+                              <span>Meetbare Groei</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="footer-nav-link">
+                              <span>Marktinzichten</span>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="footer-nav-column">
+                      <h4 class="footer-nav-title">Over Ons</h4>
+                      <ul class="footer-nav-list">
+                        <li>
+                          <a href="index.html">
+                            <div class="footer-nav-link">
+                              <span>Homepage</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="footer-nav-link">
+                              <span>Onze Aanpak</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="footer-nav-link">
+                              <span>White-Glove Service</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="footer-nav-link">
+                              <span>Expertise Team</span>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="footer-contact-section">
+                    <div class="footer-cta">
+                      <h4 class="footer-cta-title">
+                        Klaar voor Digitale Overheersing?
+                      </h4>
+                      <p class="footer-cta-text">
+                        Claim uw exclusieve intake en ontdek hoe wij uw luxe
+                        merk naar nieuwe hoogten brengen.
+                      </p>
+                      <a href="intake-aanvragen.html">
+                        <div class="footer-cta-button btn btn-primary">
+                          <span>Exclusieve Intake Claimen</span>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="footer-contact">
+                      <h4 class="footer-contact-title">Direct Contact</h4>
+                      <div class="footer-contact-items">
+                        <a href="mailto:info@marcodonatoluxe.nl?subject=">
+                          <div class="footer-contact-item">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                            >
+                              <g
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                              >
+                                <path
+                                  d="m22 7l-8.991 5.727a2 2 0 0 1-2.009 0L2 7"
+                                ></path>
+                                <rect
+                                  width="20"
+                                  height="16"
+                                  x="2"
+                                  y="4"
+                                  rx="2"
+                                ></rect>
+                              </g>
+                            </svg>
+                            <span>info@marcodonatoluxe.nl</span>
+                          </div>
+                        </a>
+                        <a href="tel:+31207001234">
+                          <div class="footer-contact-item">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233a14 14 0 0 0 6.392 6.384"
+                              ></path>
+                            </svg>
+                            <span>+31 20 700 1234</span>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="footer-social">
+                        <a href="#">
+                          <div aria-label="LinkedIn" class="footer-social-link">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                            >
+                              <g
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                              >
+                                <path
+                                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2a2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6M2 9h4v12H2z"
+                                ></path>
+                                <circle cx="4" cy="4" r="2"></circle>
+                              </g>
+                            </svg>
+                          </div>
+                        </a>
+                        <a href="#">
+                          <div
+                            aria-label="Instagram"
+                            class="footer-social-link"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                            >
+                              <g
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                              >
+                                <rect
+                                  width="20"
+                                  height="20"
+                                  x="2"
+                                  y="2"
+                                  rx="5"
+                                  ry="5"
+                                ></rect>
+                                <path
+                                  d="M16 11.37A4 4 0 1 1 12.63 8A4 4 0 0 1 16 11.37m1.5-4.87h.01"
+                                ></path>
+                              </g>
+                            </svg>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer-legal">
+                  <div class="footer-legal-content">
+                    <p class="footer-copyright">
+                      © 2025 Marcodonato Digital Luxe B.V. Alle rechten
+                      voorbehouden.
+                    </p>
+                    <div class="footer-legal-links">
+                      <a href="#">
+                        <div class="footer-legal-link">
+                          <span>Privacybeleid</span>
+                        </div>
+                      </a>
+                      <a href="#">
+                        <div class="footer-legal-link">
+                          <span>Algemene Voorwaarden</span>
+                        </div>
+                      </a>
+                      <a href="#">
+                        <div class="footer-legal-link">
+                          <span>Cookie Beleid</span>
+                        </div>
+                      </a>
+                      <a href="#">
+                        <div class="footer-legal-link">
+                          <span>Garantie Voorwaarden</span>
+                        </div>
+                      </a>
+                    </div>
+                    <p class="footer-legal-text">
+                      KvK: 87654321 | BTW: NL123456789B01
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </footer>
+          </div>
+        </footer-wrapper>
+        <a href="https://play.teleporthq.io/signup">
+          <div
+            aria-label="Sign up to TeleportHQ"
+            class="intake-aanvragen-container8"
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 19 21"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="intake-aanvragen-icon43"
+            >
+              <path
+                d="M9.1017 4.64355H2.17867C0.711684 4.64355 -0.477539 5.79975 -0.477539 7.22599V13.9567C-0.477539 15.3829 0.711684 16.5391 2.17867 16.5391H9.1017C10.5687 16.5391 11.7579 15.3829 11.7579 13.9567V7.22599C11.7579 5.79975 10.5687 4.64355 9.1017 4.64355Z"
+                fill="#B23ADE"
+              ></path>
+              <path
+                d="M10.9733 12.7878C14.4208 12.7878 17.2156 10.0706 17.2156 6.71886C17.2156 3.3671 14.4208 0.649963 10.9733 0.649963C7.52573 0.649963 4.73096 3.3671 4.73096 6.71886C4.73096 10.0706 7.52573 12.7878 10.9733 12.7878Z"
+                fill="#FF5C5C"
+              ></path>
+              <path
+                d="M17.7373 13.3654C19.1497 14.1588 19.1497 15.4634 17.7373 16.2493L10.0865 20.5387C8.67402 21.332 7.51855 20.6836 7.51855 19.0968V10.5141C7.51855 8.92916 8.67402 8.2807 10.0865 9.07221L17.7373 13.3654Z"
+                fill="#2874DE"
+              ></path>
+            </svg>
+            <span class="intake-aanvragen-text201">Built in TeleportHQ</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

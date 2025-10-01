@@ -1,0 +1,1533 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Live-Dashboard - Well To Do Front Scorpion</title>
+    <meta
+      property="og:title"
+      content="Live-Dashboard - Well To Do Front Scorpion"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;  -webkit-font-smoothing: antialiased;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;  color: inherit;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}pre {  white-space: normal;}input {  padding: 2px 4px;}img {  display: block;}details {  display: block;  margin: 0;  padding: 0;}summary::-webkit-details-marker {  display: none;}[data-thq="accordion"] [data-thq="accordion-content"] {  max-height: 0;  overflow: hidden;  transition: max-height 0.3s ease-in-out;  padding: 0;}[data-thq="accordion"] details[data-thq="accordion-trigger"][open] + [data-thq="accordion-content"] {  max-height: 1000vh;}details[data-thq="accordion-trigger"][open] summary [data-thq="accordion-icon"] {  transform: rotate(180deg);}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 1rem;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: undefined;
+        text-transform: undefined;
+        letter-spacing: normal;
+        line-height: 1.55;
+        color: var(--color-on-surface);
+        background: var(--color-surface);
+
+        fill: var(--color-on-surface);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./live-dashboard.css" rel="stylesheet" />
+
+      <div class="live-dashboard-container1">
+        <navigation-wrapper class="navigation-wrapper">
+          <!--Navigation component-->
+          <div class="navigation-container1 navigation">
+            <div class="navigation-container2">
+              <div class="navigation-container3">
+                <style>
+                          @keyframes slideInLeft {to {transform: translateX(0);
+                  opacity: 1;}}@keyframes slideInUp {to {transform: translateY(0);
+                  opacity: 1;}}
+                </style>
+              </div>
+            </div>
+            <div class="navigation-container4">
+              <div class="navigation-container5">
+                <script defer="" data-name="navigation">
+                  (function(){
+                    const navigationToggle = document.getElementById('navigationToggle')
+                    const navigationMobileOverlay = document.getElementById(
+                      'navigationMobileOverlay'
+                    )
+                    const navigationMobileClose = document.getElementById('navigationMobileClose')
+
+                    function openMobileNavigation() {
+                      navigationMobileOverlay.classList.add('navigation-mobile-active')
+                      navigationToggle.setAttribute('aria-expanded', 'true')
+                      navigationToggle.setAttribute('aria-label', 'Menu sluiten')
+                      document.body.style.overflow = 'hidden'
+                    }
+
+                    function closeMobileNavigation() {
+                      navigationMobileOverlay.classList.remove('navigation-mobile-active')
+                      navigationToggle.setAttribute('aria-expanded', 'false')
+                      navigationToggle.setAttribute('aria-label', 'Menu openen')
+                      document.body.style.overflow = ''
+                    }
+
+                    navigationToggle.addEventListener('click', function () {
+                      if (
+                        navigationMobileOverlay.classList.contains('navigation-mobile-active')
+                      ) {
+                        closeMobileNavigation()
+                      } else {
+                        openMobileNavigation()
+                      }
+                    })
+
+                    navigationMobileClose.addEventListener('click', closeMobileNavigation)
+
+                    // Close mobile navigation when clicking on overlay
+                    navigationMobileOverlay.addEventListener('click', function (e) {
+                      if (e.target === navigationMobileOverlay) {
+                        closeMobileNavigation()
+                      }
+                    })
+
+                    // Close mobile navigation on escape key
+                    document.addEventListener('keydown', function (e) {
+                      if (
+                        e.key === 'Escape' &&
+                        navigationMobileOverlay.classList.contains('navigation-mobile-active')
+                      ) {
+                        closeMobileNavigation()
+                      }
+                    })
+
+                    // Handle mobile navigation links
+                    const mobileNavLinks = document.querySelectorAll(
+                      '.navigation-mobile-menu-link, .navigation-mobile-cta'
+                    )
+                    mobileNavLinks.forEach((link) => {
+                      link.addEventListener('click', function () {
+                        closeMobileNavigation()
+                      })
+                    })
+
+                    // Handle window resize
+                    window.addEventListener('resize', function () {
+                      if (
+                        window.innerWidth > 991 &&
+                        navigationMobileOverlay.classList.contains('navigation-mobile-active')
+                      ) {
+                        closeMobileNavigation()
+                      }
+                    })
+                  })()
+                </script>
+              </div>
+            </div>
+            <nav id="navigation" class="navigation">
+              <div class="navigation-container">
+                <div class="navigation-brand">
+                  <a href="index.html">
+                    <div
+                      aria-label="Marcodonato Luxe Homepage"
+                      class="navigation-logo"
+                    >
+                      <span
+                        class="navigation-navigation-logo-text1 navigation-logo-text"
+                      >
+                        Marcodonato Digital Luxe B.V.
+                      </span>
+                    </div>
+                  </a>
+                </div>
+                <div class="navigation-content">
+                  <ul id="navigationMenu" class="navigation-menu">
+                    <li class="navigation-menu-item">
+                      <a href="live-dashboard.html">
+                        <div class="navigation-menu-link">
+                          <span>Live Dashboard</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="navigation-menu-item">
+                      <a href="intake-aanvragen.html">
+                        <div class="navigation-menu-link">
+                          <span>Intake Aanvragen</span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="navigation-actions">
+                    <a href="intake-aanvragen.html">
+                      <div class="navigation-cta btn btn-primary">
+                        <span>Claim Exclusieve Intake</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <button
+                  id="navigationToggle"
+                  aria-label="Menu openen"
+                  aria-expanded="false"
+                  class="navigation-toggle"
+                >
+                  <div
+                    id="navigationToggleIcon"
+                    class="navigation-navigation-toggle-icon"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M4 5h16M4 12h16M4 19h16"
+                      ></path>
+                    </svg>
+                  </div>
+                </button>
+              </div>
+              <div
+                id="navigationMobileOverlay"
+                class="navigation-mobile-overlay"
+              >
+                <div class="navigation-mobile-content">
+                  <div class="navigation-mobile-header">
+                    <div class="navigation-brand">
+                      <a href="index.html">
+                        <div
+                          aria-label="Marcodonato Luxe Homepage"
+                          class="navigation-logo"
+                        >
+                          <span class="navigation-logo-text">Marcodonato</span>
+                          <span class="navigation-logo-accent">Luxe</span>
+                        </div>
+                      </a>
+                    </div>
+                    <button
+                      id="navigationMobileClose"
+                      aria-label="Menu sluiten"
+                      class="navigation-mobile-close"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M18 6L6 18M6 6l12 12"
+                        ></path>
+                      </svg>
+                    </button>
+                  </div>
+                  <ul class="navigation-mobile-menu">
+                    <li class="navigation-mobile-menu-item">
+                      <a href="live-dashboard.html">
+                        <div class="navigation-mobile-menu-link">
+                          <span>Live Dashboard</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="navigation-mobile-menu-item">
+                      <a href="intake-aanvragen.html">
+                        <div class="navigation-mobile-menu-link">
+                          <span>Intake Aanvragen</span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="navigation-mobile-actions">
+                    <a href="intake-aanvragen.html">
+                      <div class="navigation-mobile-cta btn btn-primary">
+                        <span>Claim Exclusieve Intake</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </navigation-wrapper>
+        <div class="live-dashboard-container2">
+          <div class="live-dashboard-container3">
+            <script defer="" data-name="live-dashboard-interactions">
+              (function(){
+                // Smooth scroll reveal animations
+                const observerOptions = {
+                  threshold: 0.1,
+                  rootMargin: '0px 0px -50px 0px',
+                }
+
+                const observer = new IntersectionObserver((entries) => {
+                  entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                      entry.target.style.opacity = '1'
+                      entry.target.style.transform = 'translateY(0)'
+                    }
+                  })
+                }, observerOptions)
+
+                // Apply initial animation state and observe elements
+                document
+                  .querySelectorAll(
+                    '.kpi-card, .analytics-card, .report-card, .security-feature, .feature-card'
+                  )
+                  .forEach((el) => {
+                    el.style.opacity = '0'
+                    el.style.transform = 'translateY(20px)'
+                    el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out'
+                    observer.observe(el)
+                  })
+
+                // Animated progress bars
+                const progressBars = document.querySelectorAll(
+                  '.progress-fill, .mini-bar .fill'
+                )
+                const progressObserver = new IntersectionObserver((entries) => {
+                  entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                      const progressBar = entry.target
+                      const width =
+                        progressBar.style.width ||
+                        progressBar.getAttribute('style').match(/width:\s*(\d+%)/)?.[1] ||
+                        '0%'
+                      progressBar.style.width = '0%'
+                      setTimeout(() => {
+                        progressBar.style.width = width
+                      }, 200)
+                    }
+                  })
+                }, observerOptions)
+
+                progressBars.forEach((bar) => {
+                  progressObserver.observe(bar)
+                })
+
+                // KPI value counter animation
+                const kpiValues = document.querySelectorAll('.kpi-value')
+                kpiValues.forEach((value) => {
+                  const observer = new IntersectionObserver((entries) => {
+                    entries.forEach((entry) => {
+                      if (entry.isIntersecting) {
+                        const text = entry.target.textContent
+                        const number = text.match(/[\d.]+/)?.[0]
+                        if (number) {
+                          animateValue(entry.target, 0, parseFloat(number), 1000, text)
+                        }
+                      }
+                    })
+                  }, observerOptions)
+
+                  observer.observe(value)
+                })
+
+                function animateValue(element, start, end, duration, originalText) {
+                  let startTimestamp = null
+                  const step = (timestamp) => {
+                    if (!startTimestamp) startTimestamp = timestamp
+                    const progress = Math.min((timestamp - startTimestamp) / duration, 1)
+                    const current = start + (end - start) * progress
+                    element.textContent = originalText.replace(/[\d.]+/, current.toFixed(1))
+                    if (progress < 1) {
+                      window.requestAnimationFrame(step)
+                    }
+                  }
+                  window.requestAnimationFrame(step)
+                }
+
+                // Dashboard card hover effects
+                document
+                  .querySelectorAll(
+                    '.dashboard-card, .kpi-card, .analytics-card, .report-card'
+                  )
+                  .forEach((card) => {
+                    card.addEventListener('mouseenter', () => {
+                      card.style.transform = 'translateY(-4px) scale(1.02)'
+                    })
+
+                    card.addEventListener('mouseleave', () => {
+                      card.style.transform = 'translateY(0) scale(1)'
+                    })
+                  })
+
+                // Heatmap cell hover effects
+                document.querySelectorAll('.heatmap-cell').forEach((cell) => {
+                  cell.addEventListener('mouseenter', () => {
+                    cell.style.transform = 'scale(1.1)'
+                    cell.style.zIndex = '10'
+                  })
+
+                  cell.addEventListener('mouseleave', () => {
+                    cell.style.transform = 'scale(1)'
+                    cell.style.zIndex = 'auto'
+                  })
+                })
+
+                // Insight items interactive feedback
+                document.querySelectorAll('.insight-item, .action-item').forEach((item) => {
+                  item.addEventListener('click', () => {
+                    item.style.background =
+                      'color-mix(in srgb, var(--color-accent) 10%, transparent)'
+                    item.style.transform = 'scale(0.98)'
+
+                    setTimeout(() => {
+                      item.style.background = ''
+                      item.style.transform = 'scale(1)'
+                    }, 150)
+                  })
+                })
+
+                // Video background optimization
+                const video = document.querySelector('.hero-video-background video')
+                if (video) {
+                  video.addEventListener('loadeddata', () => {
+                    video.style.opacity = '1'
+                  })
+
+                  // Pause video on mobile to save bandwidth
+                  if (window.innerWidth < 768) {
+                    video.pause()
+                    video.style.opacity = '0.3'
+                  }
+                }
+
+                // Button interaction enhancements
+                document.querySelectorAll('.btn').forEach((btn) => {
+                  btn.addEventListener('click', (e) => {
+                    // Create ripple effect
+                    const ripple = document.createElement('span')
+                    const rect = btn.getBoundingClientRect()
+                    const size = Math.max(rect.width, rect.height)
+                    const x = e.clientX - rect.left - size / 2
+                    const y = e.clientY - rect.top - size / 2
+
+                    ripple.style.width = ripple.style.height = size + 'px'
+                    ripple.style.left = x + 'px'
+                    ripple.style.top = y + 'px'
+                    ripple.classList.add('ripple')
+
+                    btn.appendChild(ripple)
+
+                    setTimeout(() => {
+                      ripple.remove()
+                    }, 600)
+                  })
+                })
+
+                // Chart interaction simulation
+                document.querySelectorAll('.chart-placeholder').forEach((chart) => {
+                  chart.addEventListener('click', (e) => {
+                    const rect = chart.getBoundingClientRect()
+                    const x = (((e.clientX - rect.left) / rect.width) * 100).toFixed(1)
+                    const y = (100 - ((e.clientY - rect.top) / rect.height) * 100).toFixed(1)
+
+                    // Create tooltip
+                    const tooltip = document.createElement('div')
+                    tooltip.innerHTML = `<strong>Data Point</strong><br>X: ${x}%<br>Y: ${y}%`
+                    tooltip.style.position = 'absolute'
+                    tooltip.style.background = 'var(--color-surface-elevated)'
+                    tooltip.style.border = '1px solid var(--color-outline)'
+                    tooltip.style.borderRadius = 'var(--border-radius-sm)'
+                    tooltip.style.padding = 'var(--spacing-sm)'
+                    tooltip.style.fontSize = 'var(--font-size-xs)'
+                    tooltip.style.pointerEvents = 'none'
+                    tooltip.style.zIndex = '1000'
+                    tooltip.style.left = e.clientX + 10 + 'px'
+                    tooltip.style.top = e.clientY - 10 + 'px'
+
+                    document.body.appendChild(tooltip)
+
+                    setTimeout(() => {
+                      tooltip.remove()
+                    }, 2000)
+                  })
+                })
+              })()
+            </script>
+          </div>
+        </div>
+        <section id="hero" class="hero-section">
+          <div class="hero-video-background">
+            <video
+              autoplay="true"
+              loop="true"
+              muted="true"
+              playsinline="true"
+              src="https://videos.pexels.com/video-files/11330932/11330932-hd_1920_1080_50fps.mp4"
+            ></video>
+            <div class="hero-overlay1"></div>
+          </div>
+          <div class="hero-content1">
+            <div class="hero-text">
+              <h1 class="hero-title">Exclusieve Live Dashboard</h1>
+              <p class="hero-subtitle">Uw merk, in realtime beheerst</p>
+              <p class="section-content">
+                Directe toegang tot uw KPI's, ontworpen voor luxe merken:
+                helder, privé en altijd up-to-date. AI-gestuurde performance
+                metrics met garantie: volg onze 120-Dagen Digitale Overheersing
+                in één verfijnd overzicht.
+              </p>
+              <p class="hero-badge1">
+                Veilig, intuïtief en white-glove — inzichten die uw strategische
+                beslissingen versnellen.
+              </p>
+            </div>
+            <div class="hero-dashboard-preview">
+              <div class="dashboard-card">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <g
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  >
+                    <rect width="7" height="9" x="3" y="3" rx="1"></rect>
+                    <rect width="7" height="5" x="14" y="3" rx="1"></rect>
+                    <rect width="7" height="9" x="14" y="12" rx="1"></rect>
+                    <rect width="7" height="5" x="3" y="16" rx="1"></rect>
+                  </g>
+                </svg>
+                <div class="dashboard-text">
+                  <h3>Live KPI Tracking</h3>
+                  <p>Real-time inzichten</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="kpi-overview" class="kpi-overview-section">
+          <div class="section-container">
+            <div class="section-header">
+              <h2 class="section-title">Live KPI Overzicht</h2>
+              <p class="section-subtitle">
+                Uw digitale prestaties in één oogopslag
+              </p>
+            </div>
+            <div class="kpi-grid">
+              <div class="kpi-card">
+                <div class="kpi-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    >
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <circle cx="12" cy="12" r="6"></circle>
+                      <circle cx="12" cy="12" r="2"></circle>
+                    </g>
+                  </svg>
+                </div>
+                <h3>Realtime ROAS</h3>
+                <div class="kpi-value"><span>3.2:1</span></div>
+                <p>
+                  Duidelijk, betrouwbaar en gekoppeld aan uw omzetdoelen. Bekijk
+                  actueel rendement per campagne en prognoses richting de
+                  120-daagse norm.
+                </p>
+              </div>
+              <div class="kpi-card">
+                <div class="kpi-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    >
+                      <path d="M3 3v16a2 2 0 0 0 2 2h16"></path>
+                      <path d="m19 9l-5 5l-4-4l-3 3"></path>
+                    </g>
+                  </svg>
+                </div>
+                <h3>Traffic Value</h3>
+                <div class="kpi-value"><span>€45.2K</span></div>
+                <p>
+                  Kwalitatieve waardering van uw organische en betaalde verkeer.
+                  Meet de marktwaarde van elke bezoeker in euro's — direct
+                  vertaald naar groeipotentieel.
+                </p>
+              </div>
+              <div class="kpi-card progress-card">
+                <h3>Voortgang 120-Dagen Protocool</h3>
+                <div class="progress-bar">
+                  <div class="live-dashboard-progress-fill progress-fill"></div>
+                </div>
+                <div class="progress-text"><span>68% voltooid</span></div>
+                <p>
+                  Visuele statusbalken tonen % voltooid, mijlpalen en verwachte
+                  datum voor het behalen van onze 3:1 ROAS of 30% Traffic
+                  Value-stijging.
+                </p>
+              </div>
+              <div class="kpi-card">
+                <h3>Eigendom en transparantie</h3>
+                <p>
+                  Real-time data, altijd beschikbaar in uw privésuite — zodat
+                  prestige en prestaties samenkomen zonder verrassingen.
+                </p>
+                <button class="btn btn-outline">Export Rapport</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="analytics" class="analytics-section">
+          <div class="section-container">
+            <div class="section-header">
+              <h2 class="section-title">Realtime Analytics</h2>
+              <p class="section-subtitle">
+                Realtime inzicht, verfijnd uitgewerkt — uw prestaties, direct en
+                discreet
+              </p>
+            </div>
+            <div class="analytics-grid">
+              <div class="analytics-card chart-card">
+                <div class="chart-header">
+                  <h3>Traffic Trends</h3>
+                  <span class="chart-period">Laatste 30 dagen</span>
+                </div>
+                <div class="chart-placeholder">
+                  <img
+                    src="https://images.pexels.com/photos/577195/pexels-photo-577195.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940"
+                    alt="Traffic analytics chart"
+                    loading="lazy"
+                  />
+                  <div class="chart-overlay">
+                    <div class="chart-metric">
+                      <span class="metric-value">+24%</span>
+                      <span class="metric-label">Deze maand</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="analytics-card chart-card">
+                <div class="chart-header">
+                  <h3>Conversies</h3>
+                  <span class="chart-period">Real-time</span>
+                </div>
+                <div class="chart-placeholder">
+                  <img
+                    src="https://images.pexels.com/photos/12969403/pexels-photo-12969403.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940"
+                    alt="Conversie analytics"
+                    loading="lazy"
+                  />
+                  <div class="chart-overlay">
+                    <div class="chart-metric">
+                      <span class="metric-value">18.2%</span>
+                      <span class="metric-label">Conversieratio</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="analytics-card heatmap-card">
+                <h3>ROAS Heatmap</h3>
+                <div class="heatmap-grid">
+                  <div class="heatmap-cell high"><span>4.2</span></div>
+                  <div class="heatmap-cell medium"><span>2.8</span></div>
+                  <div class="heatmap-cell high"><span>3.9</span></div>
+                  <div class="heatmap-cell low"><span>1.7</span></div>
+                  <div class="heatmap-cell medium"><span>2.5</span></div>
+                  <div class="heatmap-cell high"><span>4.1</span></div>
+                </div>
+                <p>
+                  Visuele precisie: dynamische grafieken en heatmaps die trends
+                  blootleggen zonder ruis.
+                </p>
+              </div>
+              <div class="analytics-card insights-card">
+                <h3>Actiegericht</h3>
+                <div class="insight-list">
+                  <div class="insight-item">
+                    <span class="insight-dot"></span>
+                    <span>Verhoog budget campagne A met 25%</span>
+                  </div>
+                  <div class="insight-item">
+                    <span class="insight-dot"></span>
+                    <span>Optimaliseer landing page conversie</span>
+                  </div>
+                  <div class="insight-item">
+                    <span class="insight-dot"></span>
+                    <span>Nieuwe doelgroep-segment gedetecteerd</span>
+                  </div>
+                </div>
+                <p>
+                  Klik op elke datapunt voor contextuele aanbevelingen vanuit
+                  onze AI-motor.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="ai-insights" class="ai-insights-section">
+          <div class="section-container">
+            <div class="ai-insights-grid">
+              <div class="insights-header">
+                <div class="insights-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M12 18V5m3 8a4.17 4.17 0 0 1-3-4a4.17 4.17 0 0 1-3 4m8.598-6.5A3 3 0 1 0 12 5a3 3 0 1 0-5.598 1.5"
+                      ></path>
+                      <path d="M17.997 5.125a4 4 0 0 1 2.526 5.77"></path>
+                      <path d="M18 18a4 4 0 0 0 2-7.464"></path>
+                      <path
+                        d="M19.967 17.483A4 4 0 1 1 12 18a4 4 0 1 1-7.967-.517"
+                      ></path>
+                      <path d="M6 18a4 4 0 0 1-2-7.464"></path>
+                      <path d="M6.003 5.125a4 4 0 0 0-2.526 5.77"></path>
+                    </g>
+                  </svg>
+                </div>
+                <h2 class="section-title">AI-driven Insights</h2>
+                <p class="section-subtitle">
+                  Onze AI vertaalt data in strategische luxe‑keuzes
+                </p>
+              </div>
+              <div class="insights-content">
+                <div class="insight-category">
+                  <h3>Wat u krijgt</h3>
+                  <div class="insight-items">
+                    <div class="insight-item">
+                      <span class="bullet">•</span>
+                      <div>
+                        <strong>Persoonlijke optimalisatiepunten:</strong>
+                        <span>
+                          prioritaire actie-items met verwachte impact op ROAS
+                          en Traffic Value.
+                        </span>
+                      </div>
+                    </div>
+                    <div class="insight-item">
+                      <span class="bullet">•</span>
+                      <div>
+                        <strong>Marktdynamiek in één oogopslag:</strong>
+                        <span>
+                          prijsbewegingen, zoekintentieverschuivingen en
+                          opkomende luxe‑segmenten.
+                        </span>
+                      </div>
+                    </div>
+                    <div class="insight-item">
+                      <span class="bullet">•</span>
+                      <div>
+                        <strong>Creatieve contentkansen:</strong>
+                        <span>
+                          AI‑gedreven copy- en visual briefs die aansluiten bij
+                          uw merktonaliteit.
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="insight-visual">
+                  <img
+                    src="https://images.pexels.com/photos/27141316/pexels-photo-27141316.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940"
+                    alt="AI analytics visualization"
+                    loading="lazy"
+                  />
+                  <div class="insight-overlay">
+                    <div class="confidence-badge">
+                      <span>Confidence Score</span>
+                      <span class="score">94%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="insights-features">
+                <div class="feature-card">
+                  <h4>Waarom het verschilt</h4>
+                  <p>
+                    Onze AI is getraind op high‑end koopgedrag en luxe
+                    merkcommunicatie — niet op generieke data. Resultaat:
+                    aanbevelingen die zowel meetbaar als merkconsistent zijn.
+                  </p>
+                </div>
+                <div class="feature-card">
+                  <h4>Hoe u het gebruikt</h4>
+                  <p>
+                    Actieknoppen naast elke aanbeveling maken implementatie
+                    eenvoudig: plan een A/B test, schakel resources vrij of voeg
+                    de suggestie direct toe aan uw content roadmap.
+                  </p>
+                  <button class="btn btn-primary">Bekijk Aanbevelingen</button>
+                </div>
+                <div class="feature-card exclusive">
+                  <h4>Exclusieve functionaliteit</h4>
+                  <p>
+                    Toegang tot 'White‑Glove Insights' — halfjaarlijkse
+                    deep‑dives en op maat gemaakte marktrapporten die alleen
+                    onze selecte merken ontvangen.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="reports" class="reports-section">
+          <div class="section-container">
+            <div class="section-header">
+              <h2 class="section-title">Wekelijkse KPI-rapporten</h2>
+              <p class="section-subtitle">Verfijnd, to the point</p>
+            </div>
+            <div class="reports-masonry">
+              <div class="report-card highlights">
+                <div class="report-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"
+                      ></path>
+                      <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+                    </g>
+                  </svg>
+                </div>
+                <h3>Hoogtepunten op één bladzijde</h3>
+                <p>
+                  Prestaties ten opzichte van doelstellingen, ROAS-trends,
+                  Traffic Value en conversiepaden. Direct inzicht zonder ruis,
+                  ontworpen voor snelle beslissingen.
+                </p>
+                <div class="report-sample">
+                  <img
+                    src="https://images.pexels.com/photos/95916/pexels-photo-95916.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940"
+                    alt="Weekly report sample"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <div class="report-card actions">
+                <h3>Actiegerichte aanbevelingen</h3>
+                <p>
+                  Prioritaire optimalisaties, A/B-testvoorstellen en
+                  budgetverschuivingen met geschatte impact en
+                  implementatie-tijd.
+                </p>
+                <div class="action-list">
+                  <div class="action-item">
+                    <span class="priority high">Hoog</span>
+                    <span>Verhoog Social Media budget</span>
+                  </div>
+                  <div class="action-item">
+                    <span class="priority medium">Medium</span>
+                    <span>A/B test nieuwe landing page</span>
+                  </div>
+                  <div class="action-item">
+                    <span class="priority low">Laag</span>
+                    <span>Update remarketing audiences</span>
+                  </div>
+                </div>
+              </div>
+              <div class="report-card progress">
+                <h3>Voortgangsmeting</h3>
+                <p>
+                  Duidelijke week-op-week en 120-daagse voortgangsbalken die uw
+                  digitale overheersing tastbaar maken.
+                </p>
+                <div class="progress-charts">
+                  <div class="mini-chart">
+                    <span>Week-op-week</span>
+                    <div class="mini-bar">
+                      <div class="live-dashboard-fill1 fill"></div>
+                    </div>
+                    <span>+15%</span>
+                  </div>
+                  <div class="mini-chart">
+                    <span>120-dagen</span>
+                    <div class="mini-bar">
+                      <div class="live-dashboard-fill2 fill"></div>
+                    </div>
+                    <span>68%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="report-card context">
+                <h3>Exclusieve context</h3>
+                <p>
+                  Vergelijkingen met vergelijkbare luxe-verticals en
+                  marktbenchmarks zodat u kansen en risico's in één oogopslag
+                  ziet.
+                </p>
+                <div class="benchmark-grid">
+                  <div class="benchmark-item">
+                    <span class="benchmark-label">Uw ROAS</span>
+                    <span class="benchmark-value your">3.2:1</span>
+                  </div>
+                  <div class="benchmark-item">
+                    <span class="benchmark-label">Luxe gemiddelde</span>
+                    <span class="benchmark-value average">2.8:1</span>
+                  </div>
+                </div>
+              </div>
+              <div class="report-card white-glove">
+                <h3>White-glove presentatie</h3>
+                <p>
+                  Het rapport wordt geleverd als beveiligd PDF en verschijnt in
+                  uw Live Dashboard met commentaar van uw account director.
+                </p>
+                <button class="btn btn-outline">
+                  Download Laatste Rapport
+                </button>
+              </div>
+              <div class="report-card clarity">
+                <h3>Geen vakjargon, wel precisie</h3>
+                <p>
+                  Helder, luxueus vormgegeven rapporten die beslissingen
+                  versnellen en vertrouwen geven.
+                </p>
+                <div class="clarity-visual">
+                  <img
+                    src="https://images.pexels.com/photos/7947671/pexels-photo-7947671.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940"
+                    alt="Clear reporting visualization"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="security" class="security-section">
+          <div class="section-container">
+            <div class="security-grid">
+              <div class="security-content">
+                <div class="security-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"
+                    ></path>
+                  </svg>
+                </div>
+                <h2 class="section-title">Toegang op uw voorwaarden</h2>
+                <p class="section-subtitle">
+                  Beveiligd, verfijnd en onder uw beheer
+                </p>
+                <p class="section-content">
+                  Ons live dashboard draait op enterprise-grade encryptie en
+                  multi-factor authenticatie zodat uw merkdata altijd privé
+                  blijft.
+                </p>
+              </div>
+              <div class="security-features">
+                <div class="security-feature">
+                  <h3>Gelaagde permissies</h3>
+                  <p>
+                    Beheer wie wat ziet. Stel fijnmazige rollen in voor
+                    bestuurders, marketingteams en externe partners, met
+                    auditlogs die elke actie vastleggen voor volledige
+                    transparantie.
+                  </p>
+                </div>
+                <div class="security-feature">
+                  <h3>Single Sign-On (SSO)</h3>
+                  <p>
+                    Koppel veilig met uw bestaande ID-provider zonder dat
+                    gevoelige gegevens onnodig worden gedeeld. Onze verbindingen
+                    volgen strikte protocollen voor dataretentie.
+                  </p>
+                </div>
+                <div class="security-feature">
+                  <h3>End-to-end encryptie</h3>
+                  <p>
+                    Al uw KPI's, rapporten en AI-analyses worden versleuteld
+                    tijdens overdracht en opslag en gehost volgens de strengste
+                    Europese privacyregels.
+                  </p>
+                </div>
+                <div class="security-feature">
+                  <h3>Realtime toezicht</h3>
+                  <p>
+                    Ontvangt beveiligingswaarschuwingen en inlogherkenningen
+                    direct in uw inbox. Ongeautoriseerde toegang wordt
+                    automatisch geblokkeerd en gerapporteerd.
+                  </p>
+                </div>
+                <div class="security-feature">
+                  <h3>Toegangsherstel</h3>
+                  <p>
+                    Persoonlijke accountdirector-assistentie bij enkele
+                    uitzonderlijke gevallen, plus periodieke
+                    veiligheidsscreenings en onafhankelijke audits.
+                  </p>
+                </div>
+                <div class="security-feature">
+                  <h3>Uw data, uw rechten</h3>
+                  <p>
+                    Volledige exportmogelijkheden en duidelijke protocollen voor
+                    verwijdering of overdracht van data bij beëindiging van de
+                    samenwerking — zonder verborgen voorwaarden.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="intake" class="intake-section">
+          <div class="section-container">
+            <div class="intake-grid">
+              <div class="intake-header">
+                <div class="intake-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    >
+                      <path d="M8 2v4m8-4v4"></path>
+                      <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                      <path d="M3 10h18"></path>
+                    </g>
+                  </svg>
+                </div>
+                <h2 class="section-title">Reserveer uw intake</h2>
+                <p class="section-subtitle">Exclusieve plaats garanderen</p>
+                <p class="section-content">
+                  Word deel van een selecte groep van maximaal 10 luxe-merken
+                  per jaar. Boek uw persoonlijke onboarding en verzeker uw plek
+                  in ons 120-Dagen 'Digitale Overheersing' programma.
+                </p>
+              </div>
+              <div class="intake-benefits">
+                <h3>Wat u direct ontvangt</h3>
+                <div class="benefit-list">
+                  <div class="benefit-item">
+                    <span class="benefit-bullet">•</span>
+                    <span>
+                      White-glove onboarding met uw persoonlijke account
+                      director
+                    </span>
+                  </div>
+                  <div class="benefit-item">
+                    <span class="benefit-bullet">•</span>
+                    <span>Volledige AI-audit voorafgaand aan de kick-off</span>
+                  </div>
+                  <div class="benefit-item">
+                    <span class="benefit-bullet">•</span>
+                    <span>
+                      Toegang tot het beveiligde live dashboard vanaf dag 1
+                    </span>
+                  </div>
+                  <div class="benefit-item">
+                    <span class="benefit-bullet">•</span>
+                    <span>
+                      Gepersonaliseerd 120-dagen actieplan met KPI-commitments
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="intake-process">
+                <h3>De eerste 14 dagen — Wat u kunt verwachten</h3>
+                <p>
+                  Een discrete, efficiënte kick-off: strategische sessie,
+                  technische checks, doelgroepvalidatie en prioritering van
+                  conversiepunten — klaar om direct te schalen.
+                </p>
+                <div class="guarantee-badge1">
+                  <h4>Zekerheid en transparantie</h4>
+                  <p>
+                    Wij starten pas als u tevreden bent met het plan. Met onze
+                    Winstgevendheid of Geld Terug garantie neemt u geen risico —
+                    alleen ambities.
+                  </p>
+                </div>
+              </div>
+              <div class="intake-cta">
+                <h3>Boek uw intake</h3>
+                <p>
+                  Klik om een vertrouwelijke intake te plannen met een senior
+                  account director. Plaatsen zijn streng beperkt — reserveren is
+                  uw enige zekerheid.
+                </p>
+                <div class="cta-options">
+                  <button class="btn btn-primary btn-lg">
+                    Direct Reserveren
+                  </button>
+                  <button class="btn btn-outline">
+                    Persoonlijke Uitnodiging
+                  </button>
+                </div>
+                <div class="contact-options">
+                  <h4>Contactopties</h4>
+                  <div class="contact-list">
+                    <div class="contact-item">
+                      <span>• Direct reserveren via ons intakeformulier</span>
+                    </div>
+                    <div class="contact-item">
+                      <span>
+                        • Persoonlijke uitnodiging per e-mail na aanvraag
+                      </span>
+                    </div>
+                    <div class="contact-item">
+                      <span>• Exclusieve telefonische intake op verzoek</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer-wrapper class="footer-wrapper">
+          <!--Footer component-->
+          <div class="footer-container">
+            <footer class="footer">
+              <div class="footer-container">
+                <div class="footer-divider">
+                  <svg viewBox="0 0 1200 120" class="footer-curve">
+                    <path
+                      d="M0,0 C150,80 350,80 600,40 C850,0 1050,40 1200,20 L1200,120 L0,120 Z"
+                      fill="var(--color-surface-elevated)"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="footer-content">
+                  <div class="footer-brand-section">
+                    <div class="footer-brand">
+                      <h3 class="footer-brand-title">Marcodonato Luxe</h3>
+                      <p class="footer-brand-tagline">
+                        Exclusieve AI-gedreven digital marketing voor luxe
+                        merken
+                      </p>
+                    </div>
+                    <div class="footer-trust-badges">
+                      <div class="footer-badge">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"
+                          ></path>
+                        </svg>
+                        <span>3:1 ROAS Garantie</span>
+                      </div>
+                      <div class="footer-badge">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <g
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                          >
+                            <path
+                              d="m15.477 12.89l1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"
+                            ></path>
+                            <circle cx="12" cy="8" r="6"></circle>
+                          </g>
+                        </svg>
+                        <span>Exclusief voor 10 merken</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="footer-navigation">
+                    <div class="footer-nav-column">
+                      <h4 class="footer-nav-title">Programma</h4>
+                      <ul class="footer-nav-list">
+                        <li>
+                          <a href="#">
+                            <div class="footer-nav-link">
+                              <span>120-Dagen Protocol</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="footer-nav-link">
+                              <span>AI-Audit &amp; Strategie</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="footer-nav-link">
+                              <span>Premium Conversiefunnel</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="footer-nav-link">
+                              <span>No-Risk Optimalisatie</span>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="footer-nav-column">
+                      <h4 class="footer-nav-title">Resultaten</h4>
+                      <ul class="footer-nav-list">
+                        <li>
+                          <a href="live-dashboard.html">
+                            <div class="footer-nav-link">
+                              <span>Live Dashboard</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="footer-nav-link">
+                              <span>Klant Cases</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="footer-nav-link">
+                              <span>Meetbare Groei</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="footer-nav-link">
+                              <span>Marktinzichten</span>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="footer-nav-column">
+                      <h4 class="footer-nav-title">Over Ons</h4>
+                      <ul class="footer-nav-list">
+                        <li>
+                          <a href="index.html">
+                            <div class="footer-nav-link">
+                              <span>Homepage</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="footer-nav-link">
+                              <span>Onze Aanpak</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="footer-nav-link">
+                              <span>White-Glove Service</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="footer-nav-link">
+                              <span>Expertise Team</span>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="footer-contact-section">
+                    <div class="footer-cta">
+                      <h4 class="footer-cta-title">
+                        Klaar voor Digitale Overheersing?
+                      </h4>
+                      <p class="footer-cta-text">
+                        Claim uw exclusieve intake en ontdek hoe wij uw luxe
+                        merk naar nieuwe hoogten brengen.
+                      </p>
+                      <a href="intake-aanvragen.html">
+                        <div class="footer-cta-button btn btn-primary">
+                          <span>Exclusieve Intake Claimen</span>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="footer-contact">
+                      <h4 class="footer-contact-title">Direct Contact</h4>
+                      <div class="footer-contact-items">
+                        <a href="mailto:info@marcodonatoluxe.nl?subject=">
+                          <div class="footer-contact-item">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                            >
+                              <g
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                              >
+                                <path
+                                  d="m22 7l-8.991 5.727a2 2 0 0 1-2.009 0L2 7"
+                                ></path>
+                                <rect
+                                  width="20"
+                                  height="16"
+                                  x="2"
+                                  y="4"
+                                  rx="2"
+                                ></rect>
+                              </g>
+                            </svg>
+                            <span>info@marcodonatoluxe.nl</span>
+                          </div>
+                        </a>
+                        <a href="tel:+31207001234">
+                          <div class="footer-contact-item">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233a14 14 0 0 0 6.392 6.384"
+                              ></path>
+                            </svg>
+                            <span>+31 20 700 1234</span>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="footer-social">
+                        <a href="#">
+                          <div aria-label="LinkedIn" class="footer-social-link">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                            >
+                              <g
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                              >
+                                <path
+                                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2a2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6M2 9h4v12H2z"
+                                ></path>
+                                <circle cx="4" cy="4" r="2"></circle>
+                              </g>
+                            </svg>
+                          </div>
+                        </a>
+                        <a href="#">
+                          <div
+                            aria-label="Instagram"
+                            class="footer-social-link"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                            >
+                              <g
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                              >
+                                <rect
+                                  width="20"
+                                  height="20"
+                                  x="2"
+                                  y="2"
+                                  rx="5"
+                                  ry="5"
+                                ></rect>
+                                <path
+                                  d="M16 11.37A4 4 0 1 1 12.63 8A4 4 0 0 1 16 11.37m1.5-4.87h.01"
+                                ></path>
+                              </g>
+                            </svg>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer-legal">
+                  <div class="footer-legal-content">
+                    <p class="footer-copyright">
+                      © 2025 Marcodonato Digital Luxe B.V. Alle rechten
+                      voorbehouden.
+                    </p>
+                    <div class="footer-legal-links">
+                      <a href="#">
+                        <div class="footer-legal-link">
+                          <span>Privacybeleid</span>
+                        </div>
+                      </a>
+                      <a href="#">
+                        <div class="footer-legal-link">
+                          <span>Algemene Voorwaarden</span>
+                        </div>
+                      </a>
+                      <a href="#">
+                        <div class="footer-legal-link">
+                          <span>Cookie Beleid</span>
+                        </div>
+                      </a>
+                      <a href="#">
+                        <div class="footer-legal-link">
+                          <span>Garantie Voorwaarden</span>
+                        </div>
+                      </a>
+                    </div>
+                    <p class="footer-legal-text">
+                      KvK: 87654321 | BTW: NL123456789B01
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </footer>
+          </div>
+        </footer-wrapper>
+        <a href="https://play.teleporthq.io/signup">
+          <div
+            aria-label="Sign up to TeleportHQ"
+            class="live-dashboard-container7"
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 19 21"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="live-dashboard-icon44"
+            >
+              <path
+                d="M9.1017 4.64355H2.17867C0.711684 4.64355 -0.477539 5.79975 -0.477539 7.22599V13.9567C-0.477539 15.3829 0.711684 16.5391 2.17867 16.5391H9.1017C10.5687 16.5391 11.7579 15.3829 11.7579 13.9567V7.22599C11.7579 5.79975 10.5687 4.64355 9.1017 4.64355Z"
+                fill="#B23ADE"
+              ></path>
+              <path
+                d="M10.9733 12.7878C14.4208 12.7878 17.2156 10.0706 17.2156 6.71886C17.2156 3.3671 14.4208 0.649963 10.9733 0.649963C7.52573 0.649963 4.73096 3.3671 4.73096 6.71886C4.73096 10.0706 7.52573 12.7878 10.9733 12.7878Z"
+                fill="#FF5C5C"
+              ></path>
+              <path
+                d="M17.7373 13.3654C19.1497 14.1588 19.1497 15.4634 17.7373 16.2493L10.0865 20.5387C8.67402 21.332 7.51855 20.6836 7.51855 19.0968V10.5141C7.51855 8.92916 8.67402 8.2807 10.0865 9.07221L17.7373 13.3654Z"
+                fill="#2874DE"
+              ></path>
+            </svg>
+            <span class="live-dashboard-text98">Built in TeleportHQ</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
